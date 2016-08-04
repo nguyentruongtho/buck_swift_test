@@ -1,0 +1,26 @@
+apple_binary(
+  name='App1Binary',
+  headers= [
+  	'AppDelegate.h'
+  ],
+  srcs = [
+  	'AppDelegate.m',
+  	'main.m',
+  	'Test1.swift',
+  	'Test2.swift'
+  ],
+  frameworks = [
+    '$SDKROOT/System/Library/Frameworks/UIKit.framework',
+    '$SDKROOT/System/Library/Frameworks/Foundation.framework',
+  ],
+)
+
+apple_bundle(
+	name='App1Bundle',
+	binary=':App1Binary',
+	extension='app',
+	info_plist='Info.plist',
+	info_plist_substitutions={
+		'PRODUCT_BUNDLE_IDENTIFIER': 'com.uber.test1'
+	}
+)

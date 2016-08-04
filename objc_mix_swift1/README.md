@@ -1,0 +1,1 @@
+Run `buck install -r App1:App1Bundle`
