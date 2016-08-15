@@ -1,0 +1,26 @@
+swift_library(
+    name = 'dep1',
+    srcs = [ 'dep1/dep1.swift' ]
+)
+
+apple_binary(
+    name = 'parent',
+    srcs = [ 'parent/main.swift' ], 
+    deps = [ ':dep1' ]
+)
+
+swift_library(
+    name = 'libparent',
+    srcs = [ 'libparent/libparent.swift' ],
+    deps = [ ':dep1' ]
+)
+
+apple_bundle(
+    name='sos',
+    binary=':parent',
+    extension='app',
+    info_plist='parent/Info.plist',
+    info_plist_substitutions={
+        'PRODUCT_BUNDLE_IDENTIFIER': 'com.uber.test1'
+    }
+)
