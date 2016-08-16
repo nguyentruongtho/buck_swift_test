@@ -14,6 +14,21 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>ios-libparent.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>ios-parent.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>iosdep1.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>libparent.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -38,6 +53,21 @@
 			<true/>
 		</dict>
 		<key>2E7F878D1D62148B00F1FFB5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2EB091731D63029100BFD61F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2EB0917F1D6302C000BFD61F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2EB0919C1D63043E00BFD61F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
