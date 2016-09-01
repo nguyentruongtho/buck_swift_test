@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2EBA90441D5E040A0028A96B"
-               BuildableName = "libdep1.dylib"
-               BlueprintName = "dep1"
-               ReferencedContainer = "container:swift_on_swift.xcodeproj">
+               BlueprintIdentifier = "2E01E9ED1D75196F0074250C"
+               BuildableName = "swift_framework.app"
+               BlueprintName = "swift_framework"
+               ReferencedContainer = "container:swift_framework.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,6 +29,15 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2E01E9ED1D75196F0074250C"
+            BuildableName = "swift_framework.app"
+            BlueprintName = "swift_framework"
+            ReferencedContainer = "container:swift_framework.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -42,15 +51,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2EBA90441D5E040A0028A96B"
-            BuildableName = "libdep1.dylib"
-            BlueprintName = "dep1"
-            ReferencedContainer = "container:swift_on_swift.xcodeproj">
+            BlueprintIdentifier = "2E01E9ED1D75196F0074250C"
+            BuildableName = "swift_framework.app"
+            BlueprintName = "swift_framework"
+            ReferencedContainer = "container:swift_framework.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -60,15 +70,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2EBA90441D5E040A0028A96B"
-            BuildableName = "libdep1.dylib"
-            BlueprintName = "dep1"
-            ReferencedContainer = "container:swift_on_swift.xcodeproj">
+            BlueprintIdentifier = "2E01E9ED1D75196F0074250C"
+            BuildableName = "swift_framework.app"
+            BlueprintName = "swift_framework"
+            ReferencedContainer = "container:swift_framework.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

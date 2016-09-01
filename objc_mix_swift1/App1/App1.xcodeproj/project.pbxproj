@@ -1,0 +1,241 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E7A30F045DE6FD2400000000 /* Test1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E295DE6FD2400000000 /* Test1.swift */; };
+		E7A30F0492CD386500000000 /* Test2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E2992CD386500000000 /* Test2.swift */; };
+		E7A30F04AE317AA300000000 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD70E29AE317AA300000000 /* Foundation.framework */; };
+		E7A30F04BF88817800000000 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E29BF88817800000000 /* main.m */; };
+		E7A30F04C3B9C6B200000000 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD70E29C3B9C6B200000000 /* UIKit.framework */; };
+		E7A30F04DAB1A72500000000 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E29DAB1A72500000000 /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1DD70E29001F47FB00000000 /* BUCK */ = {isa = PBXFileReference; explicitFileType = text.script.python; path = BUCK; sourceTree = SOURCE_ROOT; };
+		1DD70E2906C06BEE00000000 /* Info.plist */ = {isa = PBXFileReference; explicitFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1DD70E292DEFC58F00000000 /* App1Bundle-Release.xcconfig */ = {isa = PBXFileReference; explicitFileType = text.xcconfig; name = "App1Bundle-Release.xcconfig"; path = "../buck-out/gen/App1/App1Bundle-Release.xcconfig"; sourceTree = SOURCE_ROOT; };
+		1DD70E2958F8F92500000000 /* App1Bundle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = App1Bundle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DD70E295DE6FD2400000000 /* Test1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test1.swift; sourceTree = SOURCE_ROOT; };
+		1DD70E2992CD386500000000 /* Test2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test2.swift; sourceTree = SOURCE_ROOT; };
+		1DD70E29AE317AA300000000 /* Foundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1DD70E29BA591A2D00000000 /* App1Bundle-Profile.xcconfig */ = {isa = PBXFileReference; explicitFileType = text.xcconfig; name = "App1Bundle-Profile.xcconfig"; path = "../buck-out/gen/App1/App1Bundle-Profile.xcconfig"; sourceTree = SOURCE_ROOT; };
+		1DD70E29BF88817800000000 /* main.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
+		1DD70E29C3B9C6B200000000 /* UIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1DD70E29DAB1A72000000000 /* AppDelegate.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		1DD70E29DAB1A72500000000 /* AppDelegate.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		1DD70E29F76E578300000000 /* App1Bundle-Debug.xcconfig */ = {isa = PBXFileReference; explicitFileType = text.xcconfig; name = "App1Bundle-Debug.xcconfig"; path = "../buck-out/gen/App1/App1Bundle-Debug.xcconfig"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F426D880000000000000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				E7A30F04AE317AA300000000 /* Foundation.framework in Frameworks */,
+				E7A30F04C3B9C6B200000000 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B401C9792F7F325000000000 /* Buck (Do Not Modify) */ = {
+			isa = PBXGroup;
+			children = (
+				1DD70E29F76E578300000000 /* App1Bundle-Debug.xcconfig */,
+				1DD70E29BA591A2D00000000 /* App1Bundle-Profile.xcconfig */,
+				1DD70E292DEFC58F00000000 /* App1Bundle-Release.xcconfig */,
+			);
+			name = "Buck (Do Not Modify)";
+			sourceTree = "<group>";
+		};
+		B401C97968022A5500000000 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DD70E29AE317AA300000000 /* Foundation.framework */,
+				1DD70E29C3B9C6B200000000 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B401C979B781F65D00000000 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				B401C9792F7F325000000000 /* Buck (Do Not Modify) */,
+			);
+			name = Configurations;
+			sourceTree = "<group>";
+		};
+		B401C979C806358400000000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DD70E2958F8F92500000000 /* App1Bundle.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B401C979EAB5339800000000 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1DD70E29DAB1A72000000000 /* AppDelegate.h */,
+				1DD70E29DAB1A72500000000 /* AppDelegate.m */,
+				1DD70E295DE6FD2400000000 /* Test1.swift */,
+				1DD70E2992CD386500000000 /* Test2.swift */,
+				1DD70E29BF88817800000000 /* main.m */,
+				1DD70E2906C06BEE00000000 /* Info.plist */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		B401C979EE6F5EF200000000 /* App1Bundle */ = {
+			isa = PBXGroup;
+			children = (
+				1DD70E29001F47FB00000000 /* BUCK */,
+				B401C979EAB5339800000000 /* Sources */,
+			);
+			name = App1Bundle;
+			sourceTree = "<group>";
+		};
+		B401C979EFB6AC4600000000 /* mainGroup */ = {
+			isa = PBXGroup;
+			children = (
+				B401C979EE6F5EF200000000 /* App1Bundle */,
+				B401C979B781F65D00000000 /* Configurations */,
+				B401C97968022A5500000000 /* Frameworks */,
+				B401C979C806358400000000 /* Products */,
+			);
+			name = mainGroup;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E66DC04EEE6F5EF200000000 /* App1Bundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 218C37090000000000000000 /* Build configuration list for PBXNativeTarget "App1Bundle" */;
+			buildPhases = (
+				1870857F0000000000000000 /* Sources */,
+				4F426D880000000000000000 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = App1Bundle;
+			productName = App1Bundle;
+			productReference = 1DD70E2958F8F92500000000 /* App1Bundle.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96C84793001F3E5000000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = 218C37090000000000000001 /* Build configuration list for PBXProject "App1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B401C979EFB6AC4600000000 /* mainGroup */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E66DC04EEE6F5EF200000000 /* App1Bundle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1870857F0000000000000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				E7A30F04DAB1A72500000000 /* AppDelegate.m in Sources */,
+				E7A30F045DE6FD2400000000 /* Test1.swift in Sources */,
+				E7A30F0492CD386500000000 /* Test2.swift in Sources */,
+				E7A30F04BF88817800000000 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4952437303EDA63300000000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DD70E29F76E578300000000 /* App1Bundle-Debug.xcconfig */;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		4952437303EDA63300000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		4952437350C7218900000000 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DD70E29BA591A2D00000000 /* App1Bundle-Profile.xcconfig */;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Profile;
+		};
+		4952437350C7218900000001 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Profile;
+		};
+		49524373A439BFE700000000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DD70E292DEFC58F00000000 /* App1Bundle-Release.xcconfig */;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Release;
+		};
+		49524373A439BFE700000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		218C37090000000000000000 /* Build configuration list for PBXNativeTarget "App1Bundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4952437303EDA63300000000 /* Debug */,
+				4952437350C7218900000000 /* Profile */,
+				49524373A439BFE700000000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		218C37090000000000000001 /* Build configuration list for PBXProject "App1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4952437303EDA63300000001 /* Debug */,
+				4952437350C7218900000001 /* Profile */,
+				49524373A439BFE700000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96C84793001F3E5000000000 /* Project object */;
+}

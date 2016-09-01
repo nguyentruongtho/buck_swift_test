@@ -1,7 +1,7 @@
 import UIKit
 
 @objc public class Test2 : NSObject {
-    public func func2(str: String) {
+    public class func func2(str: String) {
         let alert = UIAlertView()
         alert.title = "From Test2.swift"
         alert.message = str

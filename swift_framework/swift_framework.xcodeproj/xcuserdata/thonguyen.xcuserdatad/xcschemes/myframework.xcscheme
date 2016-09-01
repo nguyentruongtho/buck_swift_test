@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2EBA90441D5E040A0028A96B"
-               BuildableName = "libdep1.dylib"
-               BlueprintName = "dep1"
-               ReferencedContainer = "container:swift_on_swift.xcodeproj">
+               BlueprintIdentifier = "2E01EA0C1D75199F0074250C"
+               BuildableName = "myframework.framework"
+               BlueprintName = "myframework"
+               ReferencedContainer = "container:swift_framework.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,10 +45,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2EBA90441D5E040A0028A96B"
-            BuildableName = "libdep1.dylib"
-            BlueprintName = "dep1"
-            ReferencedContainer = "container:swift_on_swift.xcodeproj">
+            BlueprintIdentifier = "2E01EA0C1D75199F0074250C"
+            BuildableName = "myframework.framework"
+            BlueprintName = "myframework"
+            ReferencedContainer = "container:swift_framework.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -63,10 +63,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2EBA90441D5E040A0028A96B"
-            BuildableName = "libdep1.dylib"
-            BlueprintName = "dep1"
-            ReferencedContainer = "container:swift_on_swift.xcodeproj">
+            BlueprintIdentifier = "2E01EA0C1D75199F0074250C"
+            BuildableName = "myframework.framework"
+            BlueprintName = "myframework"
+            ReferencedContainer = "container:swift_framework.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

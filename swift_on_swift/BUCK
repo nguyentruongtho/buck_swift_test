@@ -32,8 +32,9 @@ swift_library(
 
 apple_binary(
     name = 'ios-parent',
-    srcs = [ 'ios-parent/AppDelegate.swift' ],
+    srcs = [ 'ios-parent/AppDelegate.swift', 'ios-parent/dummy.m' ],
     deps = [ ':iosdep1' ],
+    link_style = 'shared',
     frameworks = [
         '$SDKROOT/System/Library/Frameworks/UIKit.framework',
         '$SDKROOT/System/Library/Frameworks/Foundation.framework',
