@@ -1,0 +1,6 @@
+swift_library(
+  name = 'dep1',
+  srcs = glob([
+    'dep1/*.swift'
+  ]),
+)
