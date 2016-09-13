@@ -1,0 +1,30 @@
+swift_library(
+  name = 'dep1',
+  srcs = ['dep1/echo.swift']
+)
+
+apple_binary(
+  name='TestApp',
+  srcs = [
+      'swift_test/AppDelegate.swift',
+  ],
+  deps = [
+    ':dep1',
+  ],
+  frameworks = [
+    '$SDKROOT/System/Library/Frameworks/UIKit.framework',
+    '$SDKROOT/System/Library/Frameworks/Foundation.framework',
+  ],
+)
+
+apple_bundle(
+    name='TestBundle',
+    binary=':TestApp',
+    extension='app',
+    info_plist='swift_test/Info.plist',
+    product_name = 'TestBundle',
+    info_plist_substitutions={
+        'PRODUCT_BUNDLE_IDENTIFIER': 'com.uber.test1',
+        'EXECUTABLE_NAME': 'App1Bundle'
+    }
+)
