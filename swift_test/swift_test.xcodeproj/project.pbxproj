@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E9C74C91D880452009D6F94 /* swift_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9C74C81D880452009D6F94 /* swift_testTests.swift */; };
 		2E9C74D81D8805FC009D6F94 /* dep1.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E9C74D71D8805FC009D6F94 /* dep1.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2E9C74DC1D8805FC009D6F94 /* dep1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9C74D51D8805FC009D6F94 /* dep1.framework */; };
 		2E9C74DE1D8805FC009D6F94 /* dep1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9C74D51D8805FC009D6F94 /* dep1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2E9C74E31D880612009D6F94 /* echo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9C74E21D880612009D6F94 /* echo.swift */; };
 		2E9C74E51D882D73009D6F94 /* zero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9C74E41D882D73009D6F94 /* zero.swift */; };
 		2E9C74E71D882ECF009D6F94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9C74E61D882ECF009D6F94 /* AppDelegate.swift */; };
+		2ED59E611D89B345005B840F /* test_nodep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED59E5F1D89B345005B840F /* test_nodep.swift */; };
+		2ED59E621D89B345005B840F /* test_withdep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED59E601D89B345005B840F /* test_withdep.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +52,6 @@
 		2E9C74AD1D88022F009D6F94 /* swift_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swift_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E9C74BC1D88022F009D6F94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E9C74C61D880452009D6F94 /* swift_testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swift_testTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E9C74C81D880452009D6F94 /* swift_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_testTests.swift; sourceTree = "<group>"; };
 		2E9C74CA1D880452009D6F94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E9C74D51D8805FC009D6F94 /* dep1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = dep1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E9C74D71D8805FC009D6F94 /* dep1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dep1.h; sourceTree = "<group>"; };
@@ -59,6 +59,8 @@
 		2E9C74E21D880612009D6F94 /* echo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = echo.swift; sourceTree = "<group>"; };
 		2E9C74E41D882D73009D6F94 /* zero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = zero.swift; sourceTree = "<group>"; };
 		2E9C74E61D882ECF009D6F94 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2ED59E5F1D89B345005B840F /* test_nodep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test_nodep.swift; sourceTree = "<group>"; };
+		2ED59E601D89B345005B840F /* test_withdep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test_withdep.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +122,8 @@
 		2E9C74C71D880452009D6F94 /* swift_testTests */ = {
 			isa = PBXGroup;
 			children = (
-				2E9C74C81D880452009D6F94 /* swift_testTests.swift */,
+				2ED59E5F1D89B345005B840F /* test_nodep.swift */,
+				2ED59E601D89B345005B840F /* test_withdep.swift */,
 				2E9C74CA1D880452009D6F94 /* Info.plist */,
 			);
 			path = swift_testTests;
@@ -285,7 +288,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E9C74C91D880452009D6F94 /* swift_testTests.swift in Sources */,
+				2ED59E611D89B345005B840F /* test_nodep.swift in Sources */,
+				2ED59E621D89B345005B840F /* test_withdep.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,10 +426,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = swift_testTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.testy.swift-testTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift_test.app/swift_test";
 			};
 			name = Debug;
@@ -434,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = swift_testTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.testy.swift-testTests";
@@ -504,6 +511,7 @@
 				2E9C74C11D88022F009D6F94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E9C74CD1D880452009D6F94 /* Build configuration list for PBXNativeTarget "swift_testTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +520,7 @@
 				2E9C74CF1D880452009D6F94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E9C74DF1D8805FC009D6F94 /* Build configuration list for PBXNativeTarget "dep1" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +529,7 @@
 				2E9C74E11D8805FC009D6F94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
