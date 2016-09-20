@@ -3,7 +3,7 @@
 #import <App1Binary-Swift.h>
 
 int main(int argc, char * argv[]) {
-    [[[Test1 alloc] init] func1:@"tho12345"];
+    [Test1 func1:@"tho12345"];
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }

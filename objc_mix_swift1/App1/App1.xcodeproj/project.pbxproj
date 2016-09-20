@@ -138,6 +138,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					E66DC04EEE6F5EF200000000 = {
+						LastSwiftMigration = 0800;
+					};
+				};
 			};
 			buildConfigurationList = 218C37090000000000000001 /* Build configuration list for PBXProject "App1" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -174,7 +179,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1DD70E29F76E578300000000 /* App1Bundle-Debug.xcconfig */;
 			buildSettings = {
-				ONLY_ACTIVE_ARCH = YES;
+				"LD_RUNPATH_SEARCH_PATHS[arch=*]" = "@executable_path/Frameworks";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -188,7 +194,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1DD70E29BA591A2D00000000 /* App1Bundle-Profile.xcconfig */;
 			buildSettings = {
-				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Profile;
 		};
@@ -202,7 +208,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1DD70E292DEFC58F00000000 /* App1Bundle-Release.xcconfig */;
 			buildSettings = {
-				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};

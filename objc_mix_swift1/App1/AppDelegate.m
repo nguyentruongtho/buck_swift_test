@@ -1,5 +1,5 @@
 #import "AppDelegate.h"
-#import <App1Binary-Swift.h>
+#import <App1Bundle-Swift.h>
 #import <UIKit/UIKit.h>
 
 @interface AppDelegate ()
@@ -10,8 +10,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [[[Test1 alloc] init] func1:@"message1"];
-    [[[Test2 alloc] init] func2:@"message2"];
+    [Test1 func1:@"message1"];
+    [Test2 func2:@"message2"];
 
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"From AppDelegate.m"
                                                     message:@"Dee dee doo doo."
