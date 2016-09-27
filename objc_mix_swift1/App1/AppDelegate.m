@@ -1,5 +1,5 @@
 #import "AppDelegate.h"
-#import <App1Bundle-Swift.h>
+#import <App1Binary-Swift.h>
 #import <UIKit/UIKit.h>
 
 @interface AppDelegate ()

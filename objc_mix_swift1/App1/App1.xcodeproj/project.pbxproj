@@ -179,8 +179,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1DD70E29F76E578300000000 /* App1Bundle-Debug.xcconfig */;
 			buildSettings = {
-				"LD_RUNPATH_SEARCH_PATHS[arch=*]" = "@executable_path/Frameworks";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -194,7 +193,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1DD70E29BA591A2D00000000 /* App1Bundle-Profile.xcconfig */;
 			buildSettings = {
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Profile;
 		};
@@ -208,7 +207,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1DD70E292DEFC58F00000000 /* App1Bundle-Release.xcconfig */;
 			buildSettings = {
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

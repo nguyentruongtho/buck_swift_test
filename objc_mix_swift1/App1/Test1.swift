@@ -1,12 +1,12 @@
 import UIKit
 
-@objc public class Test1 : NSObject {
-    public class func func1(str: String) {
+@objc open class Test1 : NSObject {
+    open class func func1(_ str: String) {
         let alert = UIAlertView()
         alert.title = "From Test1.swift"
         alert.message = str
-        alert.addButtonWithTitle("Yes")
-        alert.addButtonWithTitle("No")
+        alert.addButton(withTitle: "Yes")
+        alert.addButton(withTitle: "No")
         alert.show()
     }
 }

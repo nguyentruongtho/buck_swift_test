@@ -3,4 +3,13 @@ swift_library(
   srcs = glob([
     'dep1/*.swift'
   ]),
+  preferred_linkage = 'shared'
+)
+
+swift_library(
+  name = 'parent1',
+  srcs = glob([
+    'parent1/parent1.swift'
+  ]),
+  deps = [ ':dep1' ]
 )
