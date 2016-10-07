@@ -1,0 +1,46 @@
+# TestLibrary
+apple_library(
+  name = 'TestLibrary',
+  info_plist = 'TestLibrary/Info.plist',
+  exported_headers = ['TestLibrary/TestClass.h'],
+  srcs = ['TestLibrary/TestClass.m'],
+  deps = [':TestLibraryDep'],
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  visibility = ['PUBLIC']
+)
+
+# TestLibraryDep
+apple_library(
+  name = 'TestLibraryDep',
+  info_plist = 'TestLibraryDep/Info.plist',
+  exported_headers = ['TestLibraryDep/TestClassDep.h'],
+  srcs = ['TestLibraryDep/TestClassDep.m'],
+  linker_flags = ['-lobjc'],
+  deps = [':TestLibraryTransitiveDep', ':DummyDepResource'],
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  visibility = ['PUBLIC'],
+)
+
+apple_resource(
+  name = 'DummyDepResource',
+  dirs = [],
+  files = [ 'TestLibraryDep/res-dep.txt' ],
+)
+
+# TestLibraryTransitiveDep
+apple_library(
+  name = 'TestLibraryTransitiveDep',
+  info_plist = 'TestLibraryTransitiveDep/Info.plist',
+  exported_headers = ['TestLibraryTransitiveDep/TestClassTransitiveDep.h'],
+  srcs = ['TestLibraryTransitiveDep/TestClassTransitiveDep.m'],
+  deps = [ ':DummyTransitiveDepResource' ],
+  linker_flags = ['-lobjc'],
+  #preferred_linkage = 'static',
+  visibility = ['PUBLIC'],
+)
+
+apple_resource(
+  name = 'DummyTransitiveDepResource',
+  dirs = [],
+  files = [ 'TestLibraryTransitiveDep/res-transitive-dep.txt' ],
+)
