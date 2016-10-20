@@ -1,4 +1,15 @@
 # TestAppBunle
+#   |- TestApp
+#       |- TestLibrary
+#           |- TestLibraryDep
+#               |- DummyDepResource
+#               |- TestLibraryTransitiveDep
+#                   |- DummyTransitiveDepResource
+#                   |- TestLibraryTransitiveDep2
+#                        |- DummyTransitiveDepResource2
+
+
+# TestAppBunle
 apple_bundle(
   name = 'TestAppBundle',
   info_plist = 'TestApp/Info.plist',
@@ -11,7 +22,7 @@ apple_bundle(
 apple_binary(
   name = 'TestApp',
   srcs = ['TestApp/main.m'],
-  deps = [':TestLibrary'],
+  deps = [':TestLibrary#framework'],
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
 )
 
@@ -33,10 +44,10 @@ apple_library(
   exported_headers = ['TestLibraryDep/TestClassDep.h'],
   srcs = ['TestLibraryDep/TestClassDep.m'],
   linker_flags = ['-lobjc'],
-  # preferred_linkage = 'static',
   deps = [':TestLibraryTransitiveDep', ':DummyDepResource'],
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   visibility = ['PUBLIC'],
+  preferred_linkage = 'static',
 )
 
 apple_resource(
@@ -51,7 +62,8 @@ apple_library(
   info_plist = 'TestLibraryTransitiveDep/Info.plist',
   exported_headers = ['TestLibraryTransitiveDep/TestClassTransitiveDep.h'],
   srcs = ['TestLibraryTransitiveDep/TestClassTransitiveDep.m'],
-  deps = [ ':DummyTransitiveDepResource' ],
+  deps = [ ':TestLibraryTransitiveDep2', ':DummyTransitiveDepResource' ],
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   linker_flags = ['-lobjc'],
   #preferred_linkage = 'static',
   visibility = ['PUBLIC'],
@@ -61,4 +73,23 @@ apple_resource(
   name = 'DummyTransitiveDepResource',
   dirs = [],
   files = [ 'TestLibraryTransitiveDep/res-transitive-dep.txt' ],
+)
+
+# TestLibraryTransitiveDep2
+apple_library(
+  name = 'TestLibraryTransitiveDep2',
+  info_plist = 'TestLibraryTransitiveDep2/Info.plist',
+  exported_headers = ['TestLibraryTransitiveDep2/TestClassTransitiveDep2.h'],
+  srcs = ['TestLibraryTransitiveDep2/TestClassTransitiveDep2.m'],
+  deps = [ ':DummyTransitiveDepResource2' ],
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  linker_flags = ['-lobjc'],
+  visibility = ['PUBLIC'],
+  preferred_linkage = 'static',
+)
+
+apple_resource(
+  name = 'DummyTransitiveDepResource2',
+  dirs = [],
+  files = [ 'TestLibraryTransitiveDep2/res-transitive-dep2.txt' ],
 )
