@@ -1,3 +1,20 @@
+# TestAppBunle
+apple_bundle(
+  name = 'TestAppBundle',
+  info_plist = 'TestApp/Info.plist',
+  binary = ':TestApp',
+  extension = 'app',
+  deps = [':TestApp'],
+)
+
+# TestApp
+apple_binary(
+  name = 'TestApp',
+  srcs = ['TestApp/main.m'],
+  deps = [':TestLibrary'],
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+)
+
 # TestLibrary
 apple_library(
   name = 'TestLibrary',
@@ -16,6 +33,7 @@ apple_library(
   exported_headers = ['TestLibraryDep/TestClassDep.h'],
   srcs = ['TestLibraryDep/TestClassDep.m'],
   linker_flags = ['-lobjc'],
+  # preferred_linkage = 'static',
   deps = [':TestLibraryTransitiveDep', ':DummyDepResource'],
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   visibility = ['PUBLIC'],
