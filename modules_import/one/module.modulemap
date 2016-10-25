@@ -1,0 +1,6 @@
+module ModuleOne {
+   umbrella header "one-umbrella.h"
+
+   export *
+   module * { export * }
+}
