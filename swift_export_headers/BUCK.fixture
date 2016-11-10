@@ -1,0 +1,13 @@
+apple_binary(
+    name = 'parent',
+    srcs = ['main.m'],
+    deps = [ ':child' ],
+    frameworks = [
+        '$SDKROOT/System/Library/Frameworks/Foundation.framework'
+    ]
+)
+
+swift_library(
+    name = 'child',
+    srcs = [ 'greetings.swift' ],
+)

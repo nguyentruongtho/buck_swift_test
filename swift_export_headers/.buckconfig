@@ -1,0 +1,5 @@
+[cxx]
+	default_platform=macosx-x86_64
+
+[swift]
+  version = 2.3
