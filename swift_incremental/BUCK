@@ -3,7 +3,7 @@ swift_library(
   srcs = glob([
     'dep1/*.swift'
   ]),
-  preferred_linkage = 'shared'
+  # preferred_linkage = 'shared'
 )
 
 swift_library(
