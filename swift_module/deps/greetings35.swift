@@ -1,7 +1,7 @@
 import Foundation
 
-@objc public class Greeter35 : NSObject {
-    public static func sayHello(name: String) {
+@objc open class Greeter35 : NSObject {
+    open static func sayHello(_ name: String) {
         print("Hello " + name)
     }
 }
