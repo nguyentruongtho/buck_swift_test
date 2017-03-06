@@ -1,5 +1,7 @@
 [cxx]
-	default_platform=macosx-x86_64
+  default_platform=macosx-x86_64
+  combined_preprocess_and_compile = true
+  cflags = -fmodules
 
 [swift]
-  version = 2.3
+  version = 3.0
