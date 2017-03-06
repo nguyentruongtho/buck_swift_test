@@ -1,13 +1,419 @@
+apple_bundle(
+  name = 'bundle',
+  info_plist = 'Info.plist',
+  binary = ':parent',
+  extension = 'app',
+)
+
 apple_binary(
     name = 'parent',
     srcs = ['main.m'],
-    deps = [ ':child' ],
+    deps = [
+      ':child',
+      ':child0',
+      ':child1',
+      ':child2',
+      ':child3',
+      ':child4',
+      ':child5',
+      ':child6',
+      ':child7',
+      ':child8',
+      ':child9',
+      ':child10',
+      ':child11',
+      ':child12',
+      ':child13',
+      ':child14',
+      ':child15',
+      ':child16',
+      ':child17',
+      ':child18',
+      ':child19',
+      ':child20',
+      ':child21',
+      ':child22',
+      ':child23',
+      ':child24',
+      ':child25',
+      ':child26',
+      ':child27',
+      ':child28',
+      ':child29',
+      ':child30',
+      ':child31',
+      ':child32',
+      ':child33',
+      ':child34',
+      ':child35',
+      ':child36',
+      ':child37',
+      ':child38',
+      ':child39',
+      ':child40',
+      ':child41',
+      ':child42',
+      ':child43',
+      ':child44',
+      ':child45',
+      ':child46',
+      ':child47',
+      ':child48',
+      ':child49',
+      ':child50',
+      ':child51',
+      ':child52',
+      ':child53',
+      ':child54',
+      ':child55',
+      ':child56',
+      ':child57',
+      ':child58',
+      ':child59',
+      ':child60',
+      ':child61',
+      ':child62',
+      ':child63',
+      ':child64',
+      ':child65',
+      ':child66',
+      ':child67',
+      ':child68',
+      ':child69',
+      ':child70',
+      ':child71',
+      ':child72',
+      ':child73',
+      ':child74',
+      ':child75',
+      ':child76',
+      ':child77',
+      ':child78',
+      ':child79',
+      ':child80',
+      ':child81',
+      ':child82',
+      ':child83',
+      ':child84',
+      ':child85',
+      ':child86',
+      ':child87',
+      ':child88',
+      ':child89',
+      ':child90',
+      ':child91',
+      ':child92',
+      ':child93',
+      ':child94',
+      ':child95',
+      ':child96',
+      ':child97',
+      ':child98',
+      ':child99',
+      ':child100',
+      ':child101',
+      ':child102',
+      ':child103',
+      ':child104',
+      ':child105',
+      ':child106',
+      ':child107',
+      ':child108',
+      ':child109',
+      ':child110',
+      ':child111',
+      ':child112',
+      ':child113',
+      ':child114',
+      ':child115',
+      ':child116',
+      ':child117',
+      ':child118',
+      ':child119',
+      ':child120',
+      ':child121',
+      ':child122',
+      ':child123',
+      ':child124',
+      ':child125',
+      ':child126',
+      ':child127',
+      ':child128',
+      ':child129',
+      ':child130',
+      ':child131',
+      ':child132',
+      ':child133',
+      ':child134',
+      ':child135',
+      ':child136',
+      ':child137',
+      ':child138',
+      ':child139',
+      ':child140',
+      ':child141',
+      ':child142',
+      ':child143',
+      ':child144',
+      ':child145',
+      ':child146',
+      ':child147',
+      ':child148',
+      ':child149',
+      ':child150',
+      ':child151',
+      ':child152',
+      ':child153',
+      ':child154',
+      ':child155',
+      ':child156',
+      ':child157',
+      ':child158',
+      ':child159',
+      ':child160',
+      ':child161',
+      ':child162',
+      ':child163',
+      ':child164',
+      ':child165',
+      ':child166',
+      ':child167',
+      ':child168',
+      ':child169',
+      ':child170',
+      ':child171',
+      ':child172',
+      ':child173',
+      ':child174',
+      ':child175',
+      ':child176',
+      ':child177',
+      ':child178',
+      ':child179',
+      ':child180',
+      ':child181',
+      ':child182',
+      ':child183',
+      ':child184',
+      ':child185',
+      ':child186',
+      ':child187',
+      ':child188',
+      ':child189',
+      ':child190',
+      ':child191',
+      ':child192',
+      ':child193',
+      ':child194',
+      ':child195',
+      ':child196',
+      ':child197',
+      ':child198',
+      ':child199',
+    ],
     frameworks = [
         '$SDKROOT/System/Library/Frameworks/Foundation.framework'
     ]
 )
 
-apple_library(
-    name = 'child',
-    srcs = [ 'greetings.swift' ],
-)
+apple_library(name = 'child', info_plist = 'Info.plist', srcs = [ 'deps/greetings.swift' ])
+apple_library(name = 'child0', info_plist = 'Info.plist', srcs = [ 'deps/greetings0.swift' ])
+apple_library(name = 'child1', info_plist = 'Info.plist', srcs = [ 'deps/greetings1.swift' ])
+apple_library(name = 'child2', info_plist = 'Info.plist', srcs = [ 'deps/greetings2.swift' ])
+apple_library(name = 'child3', info_plist = 'Info.plist', srcs = [ 'deps/greetings3.swift' ])
+apple_library(name = 'child4', info_plist = 'Info.plist', srcs = [ 'deps/greetings4.swift' ])
+apple_library(name = 'child5', info_plist = 'Info.plist', srcs = [ 'deps/greetings5.swift' ])
+apple_library(name = 'child6', info_plist = 'Info.plist', srcs = [ 'deps/greetings6.swift' ])
+apple_library(name = 'child7', info_plist = 'Info.plist', srcs = [ 'deps/greetings7.swift' ])
+apple_library(name = 'child8', info_plist = 'Info.plist', srcs = [ 'deps/greetings8.swift' ])
+apple_library(name = 'child9', info_plist = 'Info.plist', srcs = [ 'deps/greetings9.swift' ])
+apple_library(name = 'child10', info_plist = 'Info.plist', srcs = [ 'deps/greetings10.swift' ])
+apple_library(name = 'child11', info_plist = 'Info.plist', srcs = [ 'deps/greetings11.swift' ])
+apple_library(name = 'child12', info_plist = 'Info.plist', srcs = [ 'deps/greetings12.swift' ])
+apple_library(name = 'child13', info_plist = 'Info.plist', srcs = [ 'deps/greetings13.swift' ])
+apple_library(name = 'child14', info_plist = 'Info.plist', srcs = [ 'deps/greetings14.swift' ])
+apple_library(name = 'child15', info_plist = 'Info.plist', srcs = [ 'deps/greetings15.swift' ])
+apple_library(name = 'child16', info_plist = 'Info.plist', srcs = [ 'deps/greetings16.swift' ])
+apple_library(name = 'child17', info_plist = 'Info.plist', srcs = [ 'deps/greetings17.swift' ])
+apple_library(name = 'child18', info_plist = 'Info.plist', srcs = [ 'deps/greetings18.swift' ])
+apple_library(name = 'child19', info_plist = 'Info.plist', srcs = [ 'deps/greetings19.swift' ])
+apple_library(name = 'child20', info_plist = 'Info.plist', srcs = [ 'deps/greetings20.swift' ])
+apple_library(name = 'child21', info_plist = 'Info.plist', srcs = [ 'deps/greetings21.swift' ])
+apple_library(name = 'child22', info_plist = 'Info.plist', srcs = [ 'deps/greetings22.swift' ])
+apple_library(name = 'child23', info_plist = 'Info.plist', srcs = [ 'deps/greetings23.swift' ])
+apple_library(name = 'child24', info_plist = 'Info.plist', srcs = [ 'deps/greetings24.swift' ])
+apple_library(name = 'child25', info_plist = 'Info.plist', srcs = [ 'deps/greetings25.swift' ])
+apple_library(name = 'child26', info_plist = 'Info.plist', srcs = [ 'deps/greetings26.swift' ])
+apple_library(name = 'child27', info_plist = 'Info.plist', srcs = [ 'deps/greetings27.swift' ])
+apple_library(name = 'child28', info_plist = 'Info.plist', srcs = [ 'deps/greetings28.swift' ])
+apple_library(name = 'child29', info_plist = 'Info.plist', srcs = [ 'deps/greetings29.swift' ])
+apple_library(name = 'child30', info_plist = 'Info.plist', srcs = [ 'deps/greetings30.swift' ])
+apple_library(name = 'child31', info_plist = 'Info.plist', srcs = [ 'deps/greetings31.swift' ])
+apple_library(name = 'child32', info_plist = 'Info.plist', srcs = [ 'deps/greetings32.swift' ])
+apple_library(name = 'child33', info_plist = 'Info.plist', srcs = [ 'deps/greetings33.swift' ])
+apple_library(name = 'child34', info_plist = 'Info.plist', srcs = [ 'deps/greetings34.swift' ])
+apple_library(name = 'child35', info_plist = 'Info.plist', srcs = [ 'deps/greetings35.swift' ])
+apple_library(name = 'child36', info_plist = 'Info.plist', srcs = [ 'deps/greetings36.swift' ])
+apple_library(name = 'child37', info_plist = 'Info.plist', srcs = [ 'deps/greetings37.swift' ])
+apple_library(name = 'child38', info_plist = 'Info.plist', srcs = [ 'deps/greetings38.swift' ])
+apple_library(name = 'child39', info_plist = 'Info.plist', srcs = [ 'deps/greetings39.swift' ])
+apple_library(name = 'child40', info_plist = 'Info.plist', srcs = [ 'deps/greetings40.swift' ])
+apple_library(name = 'child41', info_plist = 'Info.plist', srcs = [ 'deps/greetings41.swift' ])
+apple_library(name = 'child42', info_plist = 'Info.plist', srcs = [ 'deps/greetings42.swift' ])
+apple_library(name = 'child43', info_plist = 'Info.plist', srcs = [ 'deps/greetings43.swift' ])
+apple_library(name = 'child44', info_plist = 'Info.plist', srcs = [ 'deps/greetings44.swift' ])
+apple_library(name = 'child45', info_plist = 'Info.plist', srcs = [ 'deps/greetings45.swift' ])
+apple_library(name = 'child46', info_plist = 'Info.plist', srcs = [ 'deps/greetings46.swift' ])
+apple_library(name = 'child47', info_plist = 'Info.plist', srcs = [ 'deps/greetings47.swift' ])
+apple_library(name = 'child48', info_plist = 'Info.plist', srcs = [ 'deps/greetings48.swift' ])
+apple_library(name = 'child49', info_plist = 'Info.plist', srcs = [ 'deps/greetings49.swift' ])
+apple_library(name = 'child50', info_plist = 'Info.plist', srcs = [ 'deps/greetings50.swift' ])
+apple_library(name = 'child51', info_plist = 'Info.plist', srcs = [ 'deps/greetings51.swift' ])
+apple_library(name = 'child52', info_plist = 'Info.plist', srcs = [ 'deps/greetings52.swift' ])
+apple_library(name = 'child53', info_plist = 'Info.plist', srcs = [ 'deps/greetings53.swift' ])
+apple_library(name = 'child54', info_plist = 'Info.plist', srcs = [ 'deps/greetings54.swift' ])
+apple_library(name = 'child55', info_plist = 'Info.plist', srcs = [ 'deps/greetings55.swift' ])
+apple_library(name = 'child56', info_plist = 'Info.plist', srcs = [ 'deps/greetings56.swift' ])
+apple_library(name = 'child57', info_plist = 'Info.plist', srcs = [ 'deps/greetings57.swift' ])
+apple_library(name = 'child58', info_plist = 'Info.plist', srcs = [ 'deps/greetings58.swift' ])
+apple_library(name = 'child59', info_plist = 'Info.plist', srcs = [ 'deps/greetings59.swift' ])
+apple_library(name = 'child60', info_plist = 'Info.plist', srcs = [ 'deps/greetings60.swift' ])
+apple_library(name = 'child61', info_plist = 'Info.plist', srcs = [ 'deps/greetings61.swift' ])
+apple_library(name = 'child62', info_plist = 'Info.plist', srcs = [ 'deps/greetings62.swift' ])
+apple_library(name = 'child63', info_plist = 'Info.plist', srcs = [ 'deps/greetings63.swift' ])
+apple_library(name = 'child64', info_plist = 'Info.plist', srcs = [ 'deps/greetings64.swift' ])
+apple_library(name = 'child65', info_plist = 'Info.plist', srcs = [ 'deps/greetings65.swift' ])
+apple_library(name = 'child66', info_plist = 'Info.plist', srcs = [ 'deps/greetings66.swift' ])
+apple_library(name = 'child67', info_plist = 'Info.plist', srcs = [ 'deps/greetings67.swift' ])
+apple_library(name = 'child68', info_plist = 'Info.plist', srcs = [ 'deps/greetings68.swift' ])
+apple_library(name = 'child69', info_plist = 'Info.plist', srcs = [ 'deps/greetings69.swift' ])
+apple_library(name = 'child70', info_plist = 'Info.plist', srcs = [ 'deps/greetings70.swift' ])
+apple_library(name = 'child71', info_plist = 'Info.plist', srcs = [ 'deps/greetings71.swift' ])
+apple_library(name = 'child72', info_plist = 'Info.plist', srcs = [ 'deps/greetings72.swift' ])
+apple_library(name = 'child73', info_plist = 'Info.plist', srcs = [ 'deps/greetings73.swift' ])
+apple_library(name = 'child74', info_plist = 'Info.plist', srcs = [ 'deps/greetings74.swift' ])
+apple_library(name = 'child75', info_plist = 'Info.plist', srcs = [ 'deps/greetings75.swift' ])
+apple_library(name = 'child76', info_plist = 'Info.plist', srcs = [ 'deps/greetings76.swift' ])
+apple_library(name = 'child77', info_plist = 'Info.plist', srcs = [ 'deps/greetings77.swift' ])
+apple_library(name = 'child78', info_plist = 'Info.plist', srcs = [ 'deps/greetings78.swift' ])
+apple_library(name = 'child79', info_plist = 'Info.plist', srcs = [ 'deps/greetings79.swift' ])
+apple_library(name = 'child80', info_plist = 'Info.plist', srcs = [ 'deps/greetings80.swift' ])
+apple_library(name = 'child81', info_plist = 'Info.plist', srcs = [ 'deps/greetings81.swift' ])
+apple_library(name = 'child82', info_plist = 'Info.plist', srcs = [ 'deps/greetings82.swift' ])
+apple_library(name = 'child83', info_plist = 'Info.plist', srcs = [ 'deps/greetings83.swift' ])
+apple_library(name = 'child84', info_plist = 'Info.plist', srcs = [ 'deps/greetings84.swift' ])
+apple_library(name = 'child85', info_plist = 'Info.plist', srcs = [ 'deps/greetings85.swift' ])
+apple_library(name = 'child86', info_plist = 'Info.plist', srcs = [ 'deps/greetings86.swift' ])
+apple_library(name = 'child87', info_plist = 'Info.plist', srcs = [ 'deps/greetings87.swift' ])
+apple_library(name = 'child88', info_plist = 'Info.plist', srcs = [ 'deps/greetings88.swift' ])
+apple_library(name = 'child89', info_plist = 'Info.plist', srcs = [ 'deps/greetings89.swift' ])
+apple_library(name = 'child90', info_plist = 'Info.plist', srcs = [ 'deps/greetings90.swift' ])
+apple_library(name = 'child91', info_plist = 'Info.plist', srcs = [ 'deps/greetings91.swift' ])
+apple_library(name = 'child92', info_plist = 'Info.plist', srcs = [ 'deps/greetings92.swift' ])
+apple_library(name = 'child93', info_plist = 'Info.plist', srcs = [ 'deps/greetings93.swift' ])
+apple_library(name = 'child94', info_plist = 'Info.plist', srcs = [ 'deps/greetings94.swift' ])
+apple_library(name = 'child95', info_plist = 'Info.plist', srcs = [ 'deps/greetings95.swift' ])
+apple_library(name = 'child96', info_plist = 'Info.plist', srcs = [ 'deps/greetings96.swift' ])
+apple_library(name = 'child97', info_plist = 'Info.plist', srcs = [ 'deps/greetings97.swift' ])
+apple_library(name = 'child98', info_plist = 'Info.plist', srcs = [ 'deps/greetings98.swift' ])
+apple_library(name = 'child99', info_plist = 'Info.plist', srcs = [ 'deps/greetings99.swift' ])
+apple_library(name = 'child100', info_plist = 'Info.plist', srcs = [ 'deps/greetings100.swift' ])
+apple_library(name = 'child101', info_plist = 'Info.plist', srcs = [ 'deps/greetings101.swift' ])
+apple_library(name = 'child102', info_plist = 'Info.plist', srcs = [ 'deps/greetings102.swift' ])
+apple_library(name = 'child103', info_plist = 'Info.plist', srcs = [ 'deps/greetings103.swift' ])
+apple_library(name = 'child104', info_plist = 'Info.plist', srcs = [ 'deps/greetings104.swift' ])
+apple_library(name = 'child105', info_plist = 'Info.plist', srcs = [ 'deps/greetings105.swift' ])
+apple_library(name = 'child106', info_plist = 'Info.plist', srcs = [ 'deps/greetings106.swift' ])
+apple_library(name = 'child107', info_plist = 'Info.plist', srcs = [ 'deps/greetings107.swift' ])
+apple_library(name = 'child108', info_plist = 'Info.plist', srcs = [ 'deps/greetings108.swift' ])
+apple_library(name = 'child109', info_plist = 'Info.plist', srcs = [ 'deps/greetings109.swift' ])
+apple_library(name = 'child110', info_plist = 'Info.plist', srcs = [ 'deps/greetings110.swift' ])
+apple_library(name = 'child111', info_plist = 'Info.plist', srcs = [ 'deps/greetings111.swift' ])
+apple_library(name = 'child112', info_plist = 'Info.plist', srcs = [ 'deps/greetings112.swift' ])
+apple_library(name = 'child113', info_plist = 'Info.plist', srcs = [ 'deps/greetings113.swift' ])
+apple_library(name = 'child114', info_plist = 'Info.plist', srcs = [ 'deps/greetings114.swift' ])
+apple_library(name = 'child115', info_plist = 'Info.plist', srcs = [ 'deps/greetings115.swift' ])
+apple_library(name = 'child116', info_plist = 'Info.plist', srcs = [ 'deps/greetings116.swift' ])
+apple_library(name = 'child117', info_plist = 'Info.plist', srcs = [ 'deps/greetings117.swift' ])
+apple_library(name = 'child118', info_plist = 'Info.plist', srcs = [ 'deps/greetings118.swift' ])
+apple_library(name = 'child119', info_plist = 'Info.plist', srcs = [ 'deps/greetings119.swift' ])
+apple_library(name = 'child120', info_plist = 'Info.plist', srcs = [ 'deps/greetings120.swift' ])
+apple_library(name = 'child121', info_plist = 'Info.plist', srcs = [ 'deps/greetings121.swift' ])
+apple_library(name = 'child122', info_plist = 'Info.plist', srcs = [ 'deps/greetings122.swift' ])
+apple_library(name = 'child123', info_plist = 'Info.plist', srcs = [ 'deps/greetings123.swift' ])
+apple_library(name = 'child124', info_plist = 'Info.plist', srcs = [ 'deps/greetings124.swift' ])
+apple_library(name = 'child125', info_plist = 'Info.plist', srcs = [ 'deps/greetings125.swift' ])
+apple_library(name = 'child126', info_plist = 'Info.plist', srcs = [ 'deps/greetings126.swift' ])
+apple_library(name = 'child127', info_plist = 'Info.plist', srcs = [ 'deps/greetings127.swift' ])
+apple_library(name = 'child128', info_plist = 'Info.plist', srcs = [ 'deps/greetings128.swift' ])
+apple_library(name = 'child129', info_plist = 'Info.plist', srcs = [ 'deps/greetings129.swift' ])
+apple_library(name = 'child130', info_plist = 'Info.plist', srcs = [ 'deps/greetings130.swift' ])
+apple_library(name = 'child131', info_plist = 'Info.plist', srcs = [ 'deps/greetings131.swift' ])
+apple_library(name = 'child132', info_plist = 'Info.plist', srcs = [ 'deps/greetings132.swift' ])
+apple_library(name = 'child133', info_plist = 'Info.plist', srcs = [ 'deps/greetings133.swift' ])
+apple_library(name = 'child134', info_plist = 'Info.plist', srcs = [ 'deps/greetings134.swift' ])
+apple_library(name = 'child135', info_plist = 'Info.plist', srcs = [ 'deps/greetings135.swift' ])
+apple_library(name = 'child136', info_plist = 'Info.plist', srcs = [ 'deps/greetings136.swift' ])
+apple_library(name = 'child137', info_plist = 'Info.plist', srcs = [ 'deps/greetings137.swift' ])
+apple_library(name = 'child138', info_plist = 'Info.plist', srcs = [ 'deps/greetings138.swift' ])
+apple_library(name = 'child139', info_plist = 'Info.plist', srcs = [ 'deps/greetings139.swift' ])
+apple_library(name = 'child140', info_plist = 'Info.plist', srcs = [ 'deps/greetings140.swift' ])
+apple_library(name = 'child141', info_plist = 'Info.plist', srcs = [ 'deps/greetings141.swift' ])
+apple_library(name = 'child142', info_plist = 'Info.plist', srcs = [ 'deps/greetings142.swift' ])
+apple_library(name = 'child143', info_plist = 'Info.plist', srcs = [ 'deps/greetings143.swift' ])
+apple_library(name = 'child144', info_plist = 'Info.plist', srcs = [ 'deps/greetings144.swift' ])
+apple_library(name = 'child145', info_plist = 'Info.plist', srcs = [ 'deps/greetings145.swift' ])
+apple_library(name = 'child146', info_plist = 'Info.plist', srcs = [ 'deps/greetings146.swift' ])
+apple_library(name = 'child147', info_plist = 'Info.plist', srcs = [ 'deps/greetings147.swift' ])
+apple_library(name = 'child148', info_plist = 'Info.plist', srcs = [ 'deps/greetings148.swift' ])
+apple_library(name = 'child149', info_plist = 'Info.plist', srcs = [ 'deps/greetings149.swift' ])
+apple_library(name = 'child150', info_plist = 'Info.plist', srcs = [ 'deps/greetings150.swift' ])
+apple_library(name = 'child151', info_plist = 'Info.plist', srcs = [ 'deps/greetings151.swift' ])
+apple_library(name = 'child152', info_plist = 'Info.plist', srcs = [ 'deps/greetings152.swift' ])
+apple_library(name = 'child153', info_plist = 'Info.plist', srcs = [ 'deps/greetings153.swift' ])
+apple_library(name = 'child154', info_plist = 'Info.plist', srcs = [ 'deps/greetings154.swift' ])
+apple_library(name = 'child155', info_plist = 'Info.plist', srcs = [ 'deps/greetings155.swift' ])
+apple_library(name = 'child156', info_plist = 'Info.plist', srcs = [ 'deps/greetings156.swift' ])
+apple_library(name = 'child157', info_plist = 'Info.plist', srcs = [ 'deps/greetings157.swift' ])
+apple_library(name = 'child158', info_plist = 'Info.plist', srcs = [ 'deps/greetings158.swift' ])
+apple_library(name = 'child159', info_plist = 'Info.plist', srcs = [ 'deps/greetings159.swift' ])
+apple_library(name = 'child160', info_plist = 'Info.plist', srcs = [ 'deps/greetings160.swift' ])
+apple_library(name = 'child161', info_plist = 'Info.plist', srcs = [ 'deps/greetings161.swift' ])
+apple_library(name = 'child162', info_plist = 'Info.plist', srcs = [ 'deps/greetings162.swift' ])
+apple_library(name = 'child163', info_plist = 'Info.plist', srcs = [ 'deps/greetings163.swift' ])
+apple_library(name = 'child164', info_plist = 'Info.plist', srcs = [ 'deps/greetings164.swift' ])
+apple_library(name = 'child165', info_plist = 'Info.plist', srcs = [ 'deps/greetings165.swift' ])
+apple_library(name = 'child166', info_plist = 'Info.plist', srcs = [ 'deps/greetings166.swift' ])
+apple_library(name = 'child167', info_plist = 'Info.plist', srcs = [ 'deps/greetings167.swift' ])
+apple_library(name = 'child168', info_plist = 'Info.plist', srcs = [ 'deps/greetings168.swift' ])
+apple_library(name = 'child169', info_plist = 'Info.plist', srcs = [ 'deps/greetings169.swift' ])
+apple_library(name = 'child170', info_plist = 'Info.plist', srcs = [ 'deps/greetings170.swift' ])
+apple_library(name = 'child171', info_plist = 'Info.plist', srcs = [ 'deps/greetings171.swift' ])
+apple_library(name = 'child172', info_plist = 'Info.plist', srcs = [ 'deps/greetings172.swift' ])
+apple_library(name = 'child173', info_plist = 'Info.plist', srcs = [ 'deps/greetings173.swift' ])
+apple_library(name = 'child174', info_plist = 'Info.plist', srcs = [ 'deps/greetings174.swift' ])
+apple_library(name = 'child175', info_plist = 'Info.plist', srcs = [ 'deps/greetings175.swift' ])
+apple_library(name = 'child176', info_plist = 'Info.plist', srcs = [ 'deps/greetings176.swift' ])
+apple_library(name = 'child177', info_plist = 'Info.plist', srcs = [ 'deps/greetings177.swift' ])
+apple_library(name = 'child178', info_plist = 'Info.plist', srcs = [ 'deps/greetings178.swift' ])
+apple_library(name = 'child179', info_plist = 'Info.plist', srcs = [ 'deps/greetings179.swift' ])
+apple_library(name = 'child180', info_plist = 'Info.plist', srcs = [ 'deps/greetings180.swift' ])
+apple_library(name = 'child181', info_plist = 'Info.plist', srcs = [ 'deps/greetings181.swift' ])
+apple_library(name = 'child182', info_plist = 'Info.plist', srcs = [ 'deps/greetings182.swift' ])
+apple_library(name = 'child183', info_plist = 'Info.plist', srcs = [ 'deps/greetings183.swift' ])
+apple_library(name = 'child184', info_plist = 'Info.plist', srcs = [ 'deps/greetings184.swift' ])
+apple_library(name = 'child185', info_plist = 'Info.plist', srcs = [ 'deps/greetings185.swift' ])
+apple_library(name = 'child186', info_plist = 'Info.plist', srcs = [ 'deps/greetings186.swift' ])
+apple_library(name = 'child187', info_plist = 'Info.plist', srcs = [ 'deps/greetings187.swift' ])
+apple_library(name = 'child188', info_plist = 'Info.plist', srcs = [ 'deps/greetings188.swift' ])
+apple_library(name = 'child189', info_plist = 'Info.plist', srcs = [ 'deps/greetings189.swift' ])
+apple_library(name = 'child190', info_plist = 'Info.plist', srcs = [ 'deps/greetings190.swift' ])
+apple_library(name = 'child191', info_plist = 'Info.plist', srcs = [ 'deps/greetings191.swift' ])
+apple_library(name = 'child192', info_plist = 'Info.plist', srcs = [ 'deps/greetings192.swift' ])
+apple_library(name = 'child193', info_plist = 'Info.plist', srcs = [ 'deps/greetings193.swift' ])
+apple_library(name = 'child194', info_plist = 'Info.plist', srcs = [ 'deps/greetings194.swift' ])
+apple_library(name = 'child195', info_plist = 'Info.plist', srcs = [ 'deps/greetings195.swift' ])
+apple_library(name = 'child196', info_plist = 'Info.plist', srcs = [ 'deps/greetings196.swift' ])
+apple_library(name = 'child197', info_plist = 'Info.plist', srcs = [ 'deps/greetings197.swift' ])
+apple_library(name = 'child198', info_plist = 'Info.plist', srcs = [ 'deps/greetings198.swift' ])
+apple_library(name = 'child199', info_plist = 'Info.plist', srcs = [ 'deps/greetings199.swift' ])
