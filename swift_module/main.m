@@ -202,6 +202,6 @@
 @import child199;
 
 int main(int argc, const char * argv[]) {
-    [Greeter sayHelloWithName:@"Swift"];
+    [Greeter sayHello:@"Swift"];
     return 0;
 }
