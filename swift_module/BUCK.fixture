@@ -7,7 +7,7 @@ apple_binary(
     ]
 )
 
-swift_library(
+apple_library(
     name = 'child',
     srcs = [ 'greetings.swift' ],
 )
