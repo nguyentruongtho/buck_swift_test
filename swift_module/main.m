@@ -1,7 +1,7 @@
-// #import "child-Swift.h"
+#import <Foundation/Foundation.h>
 @import child;
 
 int main(int argc, const char * argv[]) {
-    [Greeter sayHello:@"Swift"];
+    [Greeter sayHelloWithName:@"Swift"];
     return 0;
 }
