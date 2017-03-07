@@ -1,4 +1,5 @@
 apple_bundle(
+
   name = 'bundle',
   info_plist = 'Info.plist',
   binary = ':parent',
@@ -6,210 +7,10 @@ apple_bundle(
 )
 
 apple_binary(
+
     name = 'parent',
     srcs = ['main.m'],
-    deps = [
-      ':child',
-      ':child0',
-      ':child1',
-      ':child2',
-      ':child3',
-      ':child4',
-      ':child5',
-      ':child6',
-      ':child7',
-      ':child8',
-      ':child9',
-      ':child10',
-      ':child11',
-      ':child12',
-      ':child13',
-      ':child14',
-      ':child15',
-      ':child16',
-      ':child17',
-      ':child18',
-      ':child19',
-      ':child20',
-      ':child21',
-      ':child22',
-      ':child23',
-      ':child24',
-      ':child25',
-      ':child26',
-      ':child27',
-      ':child28',
-      ':child29',
-      ':child30',
-      ':child31',
-      ':child32',
-      ':child33',
-      ':child34',
-      ':child35',
-      ':child36',
-      ':child37',
-      ':child38',
-      ':child39',
-      ':child40',
-      ':child41',
-      ':child42',
-      ':child43',
-      ':child44',
-      ':child45',
-      ':child46',
-      ':child47',
-      ':child48',
-      ':child49',
-      ':child50',
-      ':child51',
-      ':child52',
-      ':child53',
-      ':child54',
-      ':child55',
-      ':child56',
-      ':child57',
-      ':child58',
-      ':child59',
-      ':child60',
-      ':child61',
-      ':child62',
-      ':child63',
-      ':child64',
-      ':child65',
-      ':child66',
-      ':child67',
-      ':child68',
-      ':child69',
-      ':child70',
-      ':child71',
-      ':child72',
-      ':child73',
-      ':child74',
-      ':child75',
-      ':child76',
-      ':child77',
-      ':child78',
-      ':child79',
-      ':child80',
-      ':child81',
-      ':child82',
-      ':child83',
-      ':child84',
-      ':child85',
-      ':child86',
-      ':child87',
-      ':child88',
-      ':child89',
-      ':child90',
-      ':child91',
-      ':child92',
-      ':child93',
-      ':child94',
-      ':child95',
-      ':child96',
-      ':child97',
-      ':child98',
-      ':child99',
-      ':child100',
-      ':child101',
-      ':child102',
-      ':child103',
-      ':child104',
-      ':child105',
-      ':child106',
-      ':child107',
-      ':child108',
-      ':child109',
-      ':child110',
-      ':child111',
-      ':child112',
-      ':child113',
-      ':child114',
-      ':child115',
-      ':child116',
-      ':child117',
-      ':child118',
-      ':child119',
-      ':child120',
-      ':child121',
-      ':child122',
-      ':child123',
-      ':child124',
-      ':child125',
-      ':child126',
-      ':child127',
-      ':child128',
-      ':child129',
-      ':child130',
-      ':child131',
-      ':child132',
-      ':child133',
-      ':child134',
-      ':child135',
-      ':child136',
-      ':child137',
-      ':child138',
-      ':child139',
-      ':child140',
-      ':child141',
-      ':child142',
-      ':child143',
-      ':child144',
-      ':child145',
-      ':child146',
-      ':child147',
-      ':child148',
-      ':child149',
-      ':child150',
-      ':child151',
-      ':child152',
-      ':child153',
-      ':child154',
-      ':child155',
-      ':child156',
-      ':child157',
-      ':child158',
-      ':child159',
-      ':child160',
-      ':child161',
-      ':child162',
-      ':child163',
-      ':child164',
-      ':child165',
-      ':child166',
-      ':child167',
-      ':child168',
-      ':child169',
-      ':child170',
-      ':child171',
-      ':child172',
-      ':child173',
-      ':child174',
-      ':child175',
-      ':child176',
-      ':child177',
-      ':child178',
-      ':child179',
-      ':child180',
-      ':child181',
-      ':child182',
-      ':child183',
-      ':child184',
-      ':child185',
-      ':child186',
-      ':child187',
-      ':child188',
-      ':child189',
-      ':child190',
-      ':child191',
-      ':child192',
-      ':child193',
-      ':child194',
-      ':child195',
-      ':child196',
-      ':child197',
-      ':child198',
-      ':child199',
+    deps = [':child',':child0',':child1',':child2',':child3',':child4',':child5',':child6',':child7',':child8',':child9',':child10',':child11',':child12',':child13',':child14',':child15',':child16',':child17',':child18',':child19',':child20',':child21',':child22',':child23',':child24',':child25',':child26',':child27',':child28',':child29',':child30',':child31',':child32',':child33',':child34',':child35',':child36',':child37',':child38',':child39',':child40',':child41',':child42',':child43',':child44',':child45',':child46',':child47',':child48',':child49',':child50',':child51',':child52',':child53',':child54',':child55',':child56',':child57',':child58',':child59',':child60',':child61',':child62',':child63',':child64',':child65',':child66',':child67',':child68',':child69',':child70',':child71',':child72',':child73',':child74',':child75',':child76',':child77',':child78',':child79',':child80',':child81',':child82',':child83',':child84',':child85',':child86',':child87',':child88',':child89',':child90',':child91',':child92',':child93',':child94',':child95',':child96',':child97',':child98',':child99',':child100',':child101',':child102',':child103',':child104',':child105',':child106',':child107',':child108',':child109',':child110',':child111',':child112',':child113',':child114',':child115',':child116',':child117',':child118',':child119',':child120',':child121',':child122',':child123',':child124',':child125',':child126',':child127',':child128',':child129',':child130',':child131',':child132',':child133',':child134',':child135',':child136',':child137',':child138',':child139',':child140',':child141',':child142',':child143',':child144',':child145',':child146',':child147',':child148',':child149',':child150',':child151',':child152',':child153',':child154',':child155',':child156',':child157',':child158',':child159',':child160',':child161',':child162',':child163',':child164',':child165',':child166',':child167',':child168',':child169',':child170',':child171',':child172',':child173',':child174',':child175',':child176',':child177',':child178',':child179',':child180',':child181',':child182',':child183',':child184',':child185',':child186',':child187',':child188',':child189',':child190',':child191',':child192',':child193',':child194',':child195',':child196',':child197',':child198',':child199', ':child00',':child01',':child02',':child03',':child04',':child05',':child06',':child07',':child08',':child09',':child010',':child011',':child012',':child013',':child014',':child015',':child016',':child017',':child018',':child019',':child020',':child021',':child022',':child023',':child024',':child025',':child026',':child027',':child028',':child029',':child030',':child031',':child032',':child033',':child034',':child035',':child036',':child037',':child038',':child039',':child040',':child041',':child042',':child043',':child044',':child045',':child046',':child047',':child048',':child049',':child050',':child051',':child052',':child053',':child054',':child055',':child056',':child057',':child058',':child059',':child060',':child061',':child062',':child063',':child064',':child065',':child066',':child067',':child068',':child069',':child070',':child071',':child072',':child073',':child074',':child075',':child076',':child077',':child078',':child079',':child080',':child081',':child082',':child083',':child084',':child085',':child086',':child087',':child088',':child089',':child090',':child091',':child092',':child093',':child094',':child095',':child096',':child097',':child098',':child099',':child0100',':child0101',':child0102',':child0103',':child0104',':child0105',':child0106',':child0107',':child0108',':child0109',':child0110',':child0111',':child0112',':child0113',':child0114',':child0115',':child0116',':child0117',':child0118',':child0119',':child0120',':child0121',':child0122',':child0123',':child0124',':child0125',':child0126',':child0127',':child0128',':child0129',':child0130',':child0131',':child0132',':child0133',':child0134',':child0135',':child0136',':child0137',':child0138',':child0139',':child0140',':child0141',':child0142',':child0143',':child0144',':child0145',':child0146',':child0147',':child0148',':child0149',':child0150',':child0151',':child0152',':child0153',':child0154',':child0155',':child0156',':child0157',':child0158',':child0159',':child0160',':child0161',':child0162',':child0163',':child0164',':child0165',':child0166',':child0167',':child0168',':child0169',':child0170',':child0171',':child0172',':child0173',':child0174',':child0175',':child0176',':child0177',':child0178',':child0179',':child0180',':child0181',':child0182',':child0183',':child0184',':child0185',':child0186',':child0187',':child0188',':child0189',':child0190',':child0191',':child0192',':child0193',':child0194',':child0195',':child0196',':child0197',':child0198',':child0199', ':child0000',':child0001',':child0002',':child0003',':child0004',':child0005',':child0006',':child0007',':child0008',':child0009',':child00010',':child00011',':child00012',':child00013',':child00014',':child00015',':child00016',':child00017',':child00018',':child00019',':child00020',':child00021',':child00022',':child00023',':child00024',':child00025',':child00026',':child00027',':child00028',':child00029',':child00030',':child00031',':child00032',':child00033',':child00034',':child00035',':child00036',':child00037',':child00038',':child00039',':child00040',':child00041',':child00042',':child00043',':child00044',':child00045',':child00046',':child00047',':child00048',':child00049',':child00050',':child00051',':child00052',':child00053',':child00054',':child00055',':child00056',':child00057',':child00058',':child00059',':child00060',':child00061',':child00062',':child00063',':child00064',':child00065',':child00066',':child00067',':child00068',':child00069',':child00070',':child00071',':child00072',':child00073',':child00074',':child00075',':child00076',':child00077',':child00078',':child00079',':child00080',':child00081',':child00082',':child00083',':child00084',':child00085',':child00086',':child00087',':child00088',':child00089',':child00090',':child00091',':child00092',':child00093',':child00094',':child00095',':child00096',':child00097',':child00098',':child00099',':child000100',':child000101',':child000102',':child000103',':child000104',':child000105',':child000106',':child000107',':child000108',':child000109',':child000110',':child000111',':child000112',':child000113',':child000114',':child000115',':child000116',':child000117',':child000118',':child000119',':child000120',':child000121',':child000122',':child000123',':child000124',':child000125',':child000126',':child000127',':child000128',':child000129',':child000130',':child000131',':child000132',':child000133',':child000134',':child000135',':child000136',':child000137',':child000138',':child000139',':child000140',':child000141',':child000142',':child000143',':child000144',':child000145',':child000146',':child000147',':child000148',':child000149',':child000150',':child000151',':child000152',':child000153',':child000154',':child000155',':child000156',':child000157',':child000158',':child000159',':child000160',':child000161',':child000162',':child000163',':child000164',':child000165',':child000166',':child000167',':child000168',':child000169',':child000170',':child000171',':child000172',':child000173',':child000174',':child000175',':child000176',':child000177',':child000178',':child000179',':child000180',':child000181',':child000182',':child000183',':child000184',':child000185',':child000186',':child000187',':child000188',':child000189',':child000190',':child000191',':child000192',':child000193',':child000194',':child000195',':child000196',':child000197',':child000198',':child000199'
     ],
     frameworks = [
         '$SDKROOT/System/Library/Frameworks/Foundation.framework'
@@ -217,7 +18,8 @@ apple_binary(
 )
 
 
-apple_library(name = 'child',
+apple_library(
+  name = 'child',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -229,7 +31,8 @@ apple_library(name = 'child',
   srcs = [ 'deps/greetings.swift' ]
 )
 
-apple_library(name = 'child0',
+apple_library(
+  name = 'child0',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -241,7 +44,8 @@ apple_library(name = 'child0',
   srcs = [ 'deps/greetings0.swift' ]
 )
 
-apple_library(name = 'child1',
+apple_library(
+  name = 'child1',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -253,7 +57,8 @@ apple_library(name = 'child1',
   srcs = [ 'deps/greetings1.swift' ]
 )
 
-apple_library(name = 'child2',
+apple_library(
+  name = 'child2',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -265,7 +70,8 @@ apple_library(name = 'child2',
   srcs = [ 'deps/greetings2.swift' ]
 )
 
-apple_library(name = 'child3',
+apple_library(
+  name = 'child3',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -277,7 +83,8 @@ apple_library(name = 'child3',
   srcs = [ 'deps/greetings3.swift' ]
 )
 
-apple_library(name = 'child4',
+apple_library(
+  name = 'child4',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -289,7 +96,8 @@ apple_library(name = 'child4',
   srcs = [ 'deps/greetings4.swift' ]
 )
 
-apple_library(name = 'child5',
+apple_library(
+  name = 'child5',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -301,7 +109,8 @@ apple_library(name = 'child5',
   srcs = [ 'deps/greetings5.swift' ]
 )
 
-apple_library(name = 'child6',
+apple_library(
+  name = 'child6',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -313,7 +122,8 @@ apple_library(name = 'child6',
   srcs = [ 'deps/greetings6.swift' ]
 )
 
-apple_library(name = 'child7',
+apple_library(
+  name = 'child7',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -325,7 +135,8 @@ apple_library(name = 'child7',
   srcs = [ 'deps/greetings7.swift' ]
 )
 
-apple_library(name = 'child8',
+apple_library(
+  name = 'child8',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -337,7 +148,8 @@ apple_library(name = 'child8',
   srcs = [ 'deps/greetings8.swift' ]
 )
 
-apple_library(name = 'child9',
+apple_library(
+  name = 'child9',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -349,7 +161,8 @@ apple_library(name = 'child9',
   srcs = [ 'deps/greetings9.swift' ]
 )
 
-apple_library(name = 'child10',
+apple_library(
+  name = 'child10',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -361,7 +174,8 @@ apple_library(name = 'child10',
   srcs = [ 'deps/greetings10.swift' ]
 )
 
-apple_library(name = 'child11',
+apple_library(
+  name = 'child11',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -373,7 +187,8 @@ apple_library(name = 'child11',
   srcs = [ 'deps/greetings11.swift' ]
 )
 
-apple_library(name = 'child12',
+apple_library(
+  name = 'child12',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -385,7 +200,8 @@ apple_library(name = 'child12',
   srcs = [ 'deps/greetings12.swift' ]
 )
 
-apple_library(name = 'child13',
+apple_library(
+  name = 'child13',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -397,7 +213,8 @@ apple_library(name = 'child13',
   srcs = [ 'deps/greetings13.swift' ]
 )
 
-apple_library(name = 'child14',
+apple_library(
+  name = 'child14',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -409,7 +226,8 @@ apple_library(name = 'child14',
   srcs = [ 'deps/greetings14.swift' ]
 )
 
-apple_library(name = 'child15',
+apple_library(
+  name = 'child15',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -421,7 +239,8 @@ apple_library(name = 'child15',
   srcs = [ 'deps/greetings15.swift' ]
 )
 
-apple_library(name = 'child16',
+apple_library(
+  name = 'child16',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -433,7 +252,8 @@ apple_library(name = 'child16',
   srcs = [ 'deps/greetings16.swift' ]
 )
 
-apple_library(name = 'child17',
+apple_library(
+  name = 'child17',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -445,7 +265,8 @@ apple_library(name = 'child17',
   srcs = [ 'deps/greetings17.swift' ]
 )
 
-apple_library(name = 'child18',
+apple_library(
+  name = 'child18',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -457,7 +278,8 @@ apple_library(name = 'child18',
   srcs = [ 'deps/greetings18.swift' ]
 )
 
-apple_library(name = 'child19',
+apple_library(
+  name = 'child19',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -469,7 +291,8 @@ apple_library(name = 'child19',
   srcs = [ 'deps/greetings19.swift' ]
 )
 
-apple_library(name = 'child20',
+apple_library(
+  name = 'child20',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -481,7 +304,8 @@ apple_library(name = 'child20',
   srcs = [ 'deps/greetings20.swift' ]
 )
 
-apple_library(name = 'child21',
+apple_library(
+  name = 'child21',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -493,7 +317,8 @@ apple_library(name = 'child21',
   srcs = [ 'deps/greetings21.swift' ]
 )
 
-apple_library(name = 'child22',
+apple_library(
+  name = 'child22',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -505,7 +330,8 @@ apple_library(name = 'child22',
   srcs = [ 'deps/greetings22.swift' ]
 )
 
-apple_library(name = 'child23',
+apple_library(
+  name = 'child23',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -517,7 +343,8 @@ apple_library(name = 'child23',
   srcs = [ 'deps/greetings23.swift' ]
 )
 
-apple_library(name = 'child24',
+apple_library(
+  name = 'child24',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -529,7 +356,8 @@ apple_library(name = 'child24',
   srcs = [ 'deps/greetings24.swift' ]
 )
 
-apple_library(name = 'child25',
+apple_library(
+  name = 'child25',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -541,7 +369,8 @@ apple_library(name = 'child25',
   srcs = [ 'deps/greetings25.swift' ]
 )
 
-apple_library(name = 'child26',
+apple_library(
+  name = 'child26',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -553,7 +382,8 @@ apple_library(name = 'child26',
   srcs = [ 'deps/greetings26.swift' ]
 )
 
-apple_library(name = 'child27',
+apple_library(
+  name = 'child27',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -565,7 +395,8 @@ apple_library(name = 'child27',
   srcs = [ 'deps/greetings27.swift' ]
 )
 
-apple_library(name = 'child28',
+apple_library(
+  name = 'child28',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -577,7 +408,8 @@ apple_library(name = 'child28',
   srcs = [ 'deps/greetings28.swift' ]
 )
 
-apple_library(name = 'child29',
+apple_library(
+  name = 'child29',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -589,7 +421,8 @@ apple_library(name = 'child29',
   srcs = [ 'deps/greetings29.swift' ]
 )
 
-apple_library(name = 'child30',
+apple_library(
+  name = 'child30',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -601,7 +434,8 @@ apple_library(name = 'child30',
   srcs = [ 'deps/greetings30.swift' ]
 )
 
-apple_library(name = 'child31',
+apple_library(
+  name = 'child31',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -613,7 +447,8 @@ apple_library(name = 'child31',
   srcs = [ 'deps/greetings31.swift' ]
 )
 
-apple_library(name = 'child32',
+apple_library(
+  name = 'child32',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -625,7 +460,8 @@ apple_library(name = 'child32',
   srcs = [ 'deps/greetings32.swift' ]
 )
 
-apple_library(name = 'child33',
+apple_library(
+  name = 'child33',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -637,7 +473,8 @@ apple_library(name = 'child33',
   srcs = [ 'deps/greetings33.swift' ]
 )
 
-apple_library(name = 'child34',
+apple_library(
+  name = 'child34',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -649,7 +486,8 @@ apple_library(name = 'child34',
   srcs = [ 'deps/greetings34.swift' ]
 )
 
-apple_library(name = 'child35',
+apple_library(
+  name = 'child35',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -661,7 +499,8 @@ apple_library(name = 'child35',
   srcs = [ 'deps/greetings35.swift' ]
 )
 
-apple_library(name = 'child36',
+apple_library(
+  name = 'child36',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -673,7 +512,8 @@ apple_library(name = 'child36',
   srcs = [ 'deps/greetings36.swift' ]
 )
 
-apple_library(name = 'child37',
+apple_library(
+  name = 'child37',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -685,7 +525,8 @@ apple_library(name = 'child37',
   srcs = [ 'deps/greetings37.swift' ]
 )
 
-apple_library(name = 'child38',
+apple_library(
+  name = 'child38',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -697,7 +538,8 @@ apple_library(name = 'child38',
   srcs = [ 'deps/greetings38.swift' ]
 )
 
-apple_library(name = 'child39',
+apple_library(
+  name = 'child39',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -709,7 +551,8 @@ apple_library(name = 'child39',
   srcs = [ 'deps/greetings39.swift' ]
 )
 
-apple_library(name = 'child40',
+apple_library(
+  name = 'child40',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -721,7 +564,8 @@ apple_library(name = 'child40',
   srcs = [ 'deps/greetings40.swift' ]
 )
 
-apple_library(name = 'child41',
+apple_library(
+  name = 'child41',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -733,7 +577,8 @@ apple_library(name = 'child41',
   srcs = [ 'deps/greetings41.swift' ]
 )
 
-apple_library(name = 'child42',
+apple_library(
+  name = 'child42',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -745,7 +590,8 @@ apple_library(name = 'child42',
   srcs = [ 'deps/greetings42.swift' ]
 )
 
-apple_library(name = 'child43',
+apple_library(
+  name = 'child43',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -757,7 +603,8 @@ apple_library(name = 'child43',
   srcs = [ 'deps/greetings43.swift' ]
 )
 
-apple_library(name = 'child44',
+apple_library(
+  name = 'child44',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -769,7 +616,8 @@ apple_library(name = 'child44',
   srcs = [ 'deps/greetings44.swift' ]
 )
 
-apple_library(name = 'child45',
+apple_library(
+  name = 'child45',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -781,7 +629,8 @@ apple_library(name = 'child45',
   srcs = [ 'deps/greetings45.swift' ]
 )
 
-apple_library(name = 'child46',
+apple_library(
+  name = 'child46',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -793,7 +642,8 @@ apple_library(name = 'child46',
   srcs = [ 'deps/greetings46.swift' ]
 )
 
-apple_library(name = 'child47',
+apple_library(
+  name = 'child47',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -805,7 +655,8 @@ apple_library(name = 'child47',
   srcs = [ 'deps/greetings47.swift' ]
 )
 
-apple_library(name = 'child48',
+apple_library(
+  name = 'child48',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -817,7 +668,8 @@ apple_library(name = 'child48',
   srcs = [ 'deps/greetings48.swift' ]
 )
 
-apple_library(name = 'child49',
+apple_library(
+  name = 'child49',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -829,7 +681,8 @@ apple_library(name = 'child49',
   srcs = [ 'deps/greetings49.swift' ]
 )
 
-apple_library(name = 'child50',
+apple_library(
+  name = 'child50',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -841,7 +694,8 @@ apple_library(name = 'child50',
   srcs = [ 'deps/greetings50.swift' ]
 )
 
-apple_library(name = 'child51',
+apple_library(
+  name = 'child51',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -853,7 +707,8 @@ apple_library(name = 'child51',
   srcs = [ 'deps/greetings51.swift' ]
 )
 
-apple_library(name = 'child52',
+apple_library(
+  name = 'child52',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -865,7 +720,8 @@ apple_library(name = 'child52',
   srcs = [ 'deps/greetings52.swift' ]
 )
 
-apple_library(name = 'child53',
+apple_library(
+  name = 'child53',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -877,7 +733,8 @@ apple_library(name = 'child53',
   srcs = [ 'deps/greetings53.swift' ]
 )
 
-apple_library(name = 'child54',
+apple_library(
+  name = 'child54',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -889,7 +746,8 @@ apple_library(name = 'child54',
   srcs = [ 'deps/greetings54.swift' ]
 )
 
-apple_library(name = 'child55',
+apple_library(
+  name = 'child55',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -901,7 +759,8 @@ apple_library(name = 'child55',
   srcs = [ 'deps/greetings55.swift' ]
 )
 
-apple_library(name = 'child56',
+apple_library(
+  name = 'child56',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -913,7 +772,8 @@ apple_library(name = 'child56',
   srcs = [ 'deps/greetings56.swift' ]
 )
 
-apple_library(name = 'child57',
+apple_library(
+  name = 'child57',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -925,7 +785,8 @@ apple_library(name = 'child57',
   srcs = [ 'deps/greetings57.swift' ]
 )
 
-apple_library(name = 'child58',
+apple_library(
+  name = 'child58',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -937,7 +798,8 @@ apple_library(name = 'child58',
   srcs = [ 'deps/greetings58.swift' ]
 )
 
-apple_library(name = 'child59',
+apple_library(
+  name = 'child59',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -949,7 +811,8 @@ apple_library(name = 'child59',
   srcs = [ 'deps/greetings59.swift' ]
 )
 
-apple_library(name = 'child60',
+apple_library(
+  name = 'child60',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -961,7 +824,8 @@ apple_library(name = 'child60',
   srcs = [ 'deps/greetings60.swift' ]
 )
 
-apple_library(name = 'child61',
+apple_library(
+  name = 'child61',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -973,7 +837,8 @@ apple_library(name = 'child61',
   srcs = [ 'deps/greetings61.swift' ]
 )
 
-apple_library(name = 'child62',
+apple_library(
+  name = 'child62',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -985,7 +850,8 @@ apple_library(name = 'child62',
   srcs = [ 'deps/greetings62.swift' ]
 )
 
-apple_library(name = 'child63',
+apple_library(
+  name = 'child63',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -997,7 +863,8 @@ apple_library(name = 'child63',
   srcs = [ 'deps/greetings63.swift' ]
 )
 
-apple_library(name = 'child64',
+apple_library(
+  name = 'child64',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1009,7 +876,8 @@ apple_library(name = 'child64',
   srcs = [ 'deps/greetings64.swift' ]
 )
 
-apple_library(name = 'child65',
+apple_library(
+  name = 'child65',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1021,7 +889,8 @@ apple_library(name = 'child65',
   srcs = [ 'deps/greetings65.swift' ]
 )
 
-apple_library(name = 'child66',
+apple_library(
+  name = 'child66',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1033,7 +902,8 @@ apple_library(name = 'child66',
   srcs = [ 'deps/greetings66.swift' ]
 )
 
-apple_library(name = 'child67',
+apple_library(
+  name = 'child67',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1045,7 +915,8 @@ apple_library(name = 'child67',
   srcs = [ 'deps/greetings67.swift' ]
 )
 
-apple_library(name = 'child68',
+apple_library(
+  name = 'child68',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1057,7 +928,8 @@ apple_library(name = 'child68',
   srcs = [ 'deps/greetings68.swift' ]
 )
 
-apple_library(name = 'child69',
+apple_library(
+  name = 'child69',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1069,7 +941,8 @@ apple_library(name = 'child69',
   srcs = [ 'deps/greetings69.swift' ]
 )
 
-apple_library(name = 'child70',
+apple_library(
+  name = 'child70',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1081,7 +954,8 @@ apple_library(name = 'child70',
   srcs = [ 'deps/greetings70.swift' ]
 )
 
-apple_library(name = 'child71',
+apple_library(
+  name = 'child71',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1093,7 +967,8 @@ apple_library(name = 'child71',
   srcs = [ 'deps/greetings71.swift' ]
 )
 
-apple_library(name = 'child72',
+apple_library(
+  name = 'child72',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1105,7 +980,8 @@ apple_library(name = 'child72',
   srcs = [ 'deps/greetings72.swift' ]
 )
 
-apple_library(name = 'child73',
+apple_library(
+  name = 'child73',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1117,7 +993,8 @@ apple_library(name = 'child73',
   srcs = [ 'deps/greetings73.swift' ]
 )
 
-apple_library(name = 'child74',
+apple_library(
+  name = 'child74',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1129,7 +1006,8 @@ apple_library(name = 'child74',
   srcs = [ 'deps/greetings74.swift' ]
 )
 
-apple_library(name = 'child75',
+apple_library(
+  name = 'child75',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1141,7 +1019,8 @@ apple_library(name = 'child75',
   srcs = [ 'deps/greetings75.swift' ]
 )
 
-apple_library(name = 'child76',
+apple_library(
+  name = 'child76',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1153,7 +1032,8 @@ apple_library(name = 'child76',
   srcs = [ 'deps/greetings76.swift' ]
 )
 
-apple_library(name = 'child77',
+apple_library(
+  name = 'child77',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1165,7 +1045,8 @@ apple_library(name = 'child77',
   srcs = [ 'deps/greetings77.swift' ]
 )
 
-apple_library(name = 'child78',
+apple_library(
+  name = 'child78',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1177,7 +1058,8 @@ apple_library(name = 'child78',
   srcs = [ 'deps/greetings78.swift' ]
 )
 
-apple_library(name = 'child79',
+apple_library(
+  name = 'child79',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1189,7 +1071,8 @@ apple_library(name = 'child79',
   srcs = [ 'deps/greetings79.swift' ]
 )
 
-apple_library(name = 'child80',
+apple_library(
+  name = 'child80',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1201,7 +1084,8 @@ apple_library(name = 'child80',
   srcs = [ 'deps/greetings80.swift' ]
 )
 
-apple_library(name = 'child81',
+apple_library(
+  name = 'child81',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1213,7 +1097,8 @@ apple_library(name = 'child81',
   srcs = [ 'deps/greetings81.swift' ]
 )
 
-apple_library(name = 'child82',
+apple_library(
+  name = 'child82',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1225,7 +1110,8 @@ apple_library(name = 'child82',
   srcs = [ 'deps/greetings82.swift' ]
 )
 
-apple_library(name = 'child83',
+apple_library(
+  name = 'child83',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1237,7 +1123,8 @@ apple_library(name = 'child83',
   srcs = [ 'deps/greetings83.swift' ]
 )
 
-apple_library(name = 'child84',
+apple_library(
+  name = 'child84',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1249,7 +1136,8 @@ apple_library(name = 'child84',
   srcs = [ 'deps/greetings84.swift' ]
 )
 
-apple_library(name = 'child85',
+apple_library(
+  name = 'child85',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1261,7 +1149,8 @@ apple_library(name = 'child85',
   srcs = [ 'deps/greetings85.swift' ]
 )
 
-apple_library(name = 'child86',
+apple_library(
+  name = 'child86',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1273,7 +1162,8 @@ apple_library(name = 'child86',
   srcs = [ 'deps/greetings86.swift' ]
 )
 
-apple_library(name = 'child87',
+apple_library(
+  name = 'child87',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1285,7 +1175,8 @@ apple_library(name = 'child87',
   srcs = [ 'deps/greetings87.swift' ]
 )
 
-apple_library(name = 'child88',
+apple_library(
+  name = 'child88',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1297,7 +1188,8 @@ apple_library(name = 'child88',
   srcs = [ 'deps/greetings88.swift' ]
 )
 
-apple_library(name = 'child89',
+apple_library(
+  name = 'child89',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1309,7 +1201,8 @@ apple_library(name = 'child89',
   srcs = [ 'deps/greetings89.swift' ]
 )
 
-apple_library(name = 'child90',
+apple_library(
+  name = 'child90',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1321,7 +1214,8 @@ apple_library(name = 'child90',
   srcs = [ 'deps/greetings90.swift' ]
 )
 
-apple_library(name = 'child91',
+apple_library(
+  name = 'child91',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1333,7 +1227,8 @@ apple_library(name = 'child91',
   srcs = [ 'deps/greetings91.swift' ]
 )
 
-apple_library(name = 'child92',
+apple_library(
+  name = 'child92',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1345,7 +1240,8 @@ apple_library(name = 'child92',
   srcs = [ 'deps/greetings92.swift' ]
 )
 
-apple_library(name = 'child93',
+apple_library(
+  name = 'child93',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1357,7 +1253,8 @@ apple_library(name = 'child93',
   srcs = [ 'deps/greetings93.swift' ]
 )
 
-apple_library(name = 'child94',
+apple_library(
+  name = 'child94',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1369,7 +1266,8 @@ apple_library(name = 'child94',
   srcs = [ 'deps/greetings94.swift' ]
 )
 
-apple_library(name = 'child95',
+apple_library(
+  name = 'child95',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1381,7 +1279,8 @@ apple_library(name = 'child95',
   srcs = [ 'deps/greetings95.swift' ]
 )
 
-apple_library(name = 'child96',
+apple_library(
+  name = 'child96',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1393,7 +1292,8 @@ apple_library(name = 'child96',
   srcs = [ 'deps/greetings96.swift' ]
 )
 
-apple_library(name = 'child97',
+apple_library(
+  name = 'child97',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1405,7 +1305,8 @@ apple_library(name = 'child97',
   srcs = [ 'deps/greetings97.swift' ]
 )
 
-apple_library(name = 'child98',
+apple_library(
+  name = 'child98',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1417,7 +1318,8 @@ apple_library(name = 'child98',
   srcs = [ 'deps/greetings98.swift' ]
 )
 
-apple_library(name = 'child99',
+apple_library(
+  name = 'child99',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1429,7 +1331,8 @@ apple_library(name = 'child99',
   srcs = [ 'deps/greetings99.swift' ]
 )
 
-apple_library(name = 'child100',
+apple_library(
+  name = 'child100',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1441,7 +1344,8 @@ apple_library(name = 'child100',
   srcs = [ 'deps/greetings100.swift' ]
 )
 
-apple_library(name = 'child101',
+apple_library(
+  name = 'child101',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1453,7 +1357,8 @@ apple_library(name = 'child101',
   srcs = [ 'deps/greetings101.swift' ]
 )
 
-apple_library(name = 'child102',
+apple_library(
+  name = 'child102',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1465,7 +1370,8 @@ apple_library(name = 'child102',
   srcs = [ 'deps/greetings102.swift' ]
 )
 
-apple_library(name = 'child103',
+apple_library(
+  name = 'child103',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1477,7 +1383,8 @@ apple_library(name = 'child103',
   srcs = [ 'deps/greetings103.swift' ]
 )
 
-apple_library(name = 'child104',
+apple_library(
+  name = 'child104',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1489,7 +1396,8 @@ apple_library(name = 'child104',
   srcs = [ 'deps/greetings104.swift' ]
 )
 
-apple_library(name = 'child105',
+apple_library(
+  name = 'child105',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1501,7 +1409,8 @@ apple_library(name = 'child105',
   srcs = [ 'deps/greetings105.swift' ]
 )
 
-apple_library(name = 'child106',
+apple_library(
+  name = 'child106',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1513,7 +1422,8 @@ apple_library(name = 'child106',
   srcs = [ 'deps/greetings106.swift' ]
 )
 
-apple_library(name = 'child107',
+apple_library(
+  name = 'child107',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1525,7 +1435,8 @@ apple_library(name = 'child107',
   srcs = [ 'deps/greetings107.swift' ]
 )
 
-apple_library(name = 'child108',
+apple_library(
+  name = 'child108',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1537,7 +1448,8 @@ apple_library(name = 'child108',
   srcs = [ 'deps/greetings108.swift' ]
 )
 
-apple_library(name = 'child109',
+apple_library(
+  name = 'child109',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1549,7 +1461,8 @@ apple_library(name = 'child109',
   srcs = [ 'deps/greetings109.swift' ]
 )
 
-apple_library(name = 'child110',
+apple_library(
+  name = 'child110',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1561,7 +1474,8 @@ apple_library(name = 'child110',
   srcs = [ 'deps/greetings110.swift' ]
 )
 
-apple_library(name = 'child111',
+apple_library(
+  name = 'child111',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1573,7 +1487,8 @@ apple_library(name = 'child111',
   srcs = [ 'deps/greetings111.swift' ]
 )
 
-apple_library(name = 'child112',
+apple_library(
+  name = 'child112',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1585,7 +1500,8 @@ apple_library(name = 'child112',
   srcs = [ 'deps/greetings112.swift' ]
 )
 
-apple_library(name = 'child113',
+apple_library(
+  name = 'child113',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1597,7 +1513,8 @@ apple_library(name = 'child113',
   srcs = [ 'deps/greetings113.swift' ]
 )
 
-apple_library(name = 'child114',
+apple_library(
+  name = 'child114',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1609,7 +1526,8 @@ apple_library(name = 'child114',
   srcs = [ 'deps/greetings114.swift' ]
 )
 
-apple_library(name = 'child115',
+apple_library(
+  name = 'child115',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1621,7 +1539,8 @@ apple_library(name = 'child115',
   srcs = [ 'deps/greetings115.swift' ]
 )
 
-apple_library(name = 'child116',
+apple_library(
+  name = 'child116',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1633,7 +1552,8 @@ apple_library(name = 'child116',
   srcs = [ 'deps/greetings116.swift' ]
 )
 
-apple_library(name = 'child117',
+apple_library(
+  name = 'child117',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1645,7 +1565,8 @@ apple_library(name = 'child117',
   srcs = [ 'deps/greetings117.swift' ]
 )
 
-apple_library(name = 'child118',
+apple_library(
+  name = 'child118',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1657,7 +1578,8 @@ apple_library(name = 'child118',
   srcs = [ 'deps/greetings118.swift' ]
 )
 
-apple_library(name = 'child119',
+apple_library(
+  name = 'child119',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1669,7 +1591,8 @@ apple_library(name = 'child119',
   srcs = [ 'deps/greetings119.swift' ]
 )
 
-apple_library(name = 'child120',
+apple_library(
+  name = 'child120',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1681,7 +1604,8 @@ apple_library(name = 'child120',
   srcs = [ 'deps/greetings120.swift' ]
 )
 
-apple_library(name = 'child121',
+apple_library(
+  name = 'child121',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1693,7 +1617,8 @@ apple_library(name = 'child121',
   srcs = [ 'deps/greetings121.swift' ]
 )
 
-apple_library(name = 'child122',
+apple_library(
+  name = 'child122',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1705,7 +1630,8 @@ apple_library(name = 'child122',
   srcs = [ 'deps/greetings122.swift' ]
 )
 
-apple_library(name = 'child123',
+apple_library(
+  name = 'child123',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1717,7 +1643,8 @@ apple_library(name = 'child123',
   srcs = [ 'deps/greetings123.swift' ]
 )
 
-apple_library(name = 'child124',
+apple_library(
+  name = 'child124',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1729,7 +1656,8 @@ apple_library(name = 'child124',
   srcs = [ 'deps/greetings124.swift' ]
 )
 
-apple_library(name = 'child125',
+apple_library(
+  name = 'child125',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1741,7 +1669,8 @@ apple_library(name = 'child125',
   srcs = [ 'deps/greetings125.swift' ]
 )
 
-apple_library(name = 'child126',
+apple_library(
+  name = 'child126',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1753,7 +1682,8 @@ apple_library(name = 'child126',
   srcs = [ 'deps/greetings126.swift' ]
 )
 
-apple_library(name = 'child127',
+apple_library(
+  name = 'child127',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1765,7 +1695,8 @@ apple_library(name = 'child127',
   srcs = [ 'deps/greetings127.swift' ]
 )
 
-apple_library(name = 'child128',
+apple_library(
+  name = 'child128',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1777,7 +1708,8 @@ apple_library(name = 'child128',
   srcs = [ 'deps/greetings128.swift' ]
 )
 
-apple_library(name = 'child129',
+apple_library(
+  name = 'child129',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1789,7 +1721,8 @@ apple_library(name = 'child129',
   srcs = [ 'deps/greetings129.swift' ]
 )
 
-apple_library(name = 'child130',
+apple_library(
+  name = 'child130',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1801,7 +1734,8 @@ apple_library(name = 'child130',
   srcs = [ 'deps/greetings130.swift' ]
 )
 
-apple_library(name = 'child131',
+apple_library(
+  name = 'child131',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1813,7 +1747,8 @@ apple_library(name = 'child131',
   srcs = [ 'deps/greetings131.swift' ]
 )
 
-apple_library(name = 'child132',
+apple_library(
+  name = 'child132',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1825,7 +1760,8 @@ apple_library(name = 'child132',
   srcs = [ 'deps/greetings132.swift' ]
 )
 
-apple_library(name = 'child133',
+apple_library(
+  name = 'child133',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1837,7 +1773,8 @@ apple_library(name = 'child133',
   srcs = [ 'deps/greetings133.swift' ]
 )
 
-apple_library(name = 'child134',
+apple_library(
+  name = 'child134',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1849,7 +1786,8 @@ apple_library(name = 'child134',
   srcs = [ 'deps/greetings134.swift' ]
 )
 
-apple_library(name = 'child135',
+apple_library(
+  name = 'child135',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1861,7 +1799,8 @@ apple_library(name = 'child135',
   srcs = [ 'deps/greetings135.swift' ]
 )
 
-apple_library(name = 'child136',
+apple_library(
+  name = 'child136',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1873,7 +1812,8 @@ apple_library(name = 'child136',
   srcs = [ 'deps/greetings136.swift' ]
 )
 
-apple_library(name = 'child137',
+apple_library(
+  name = 'child137',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1885,7 +1825,8 @@ apple_library(name = 'child137',
   srcs = [ 'deps/greetings137.swift' ]
 )
 
-apple_library(name = 'child138',
+apple_library(
+  name = 'child138',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1897,7 +1838,8 @@ apple_library(name = 'child138',
   srcs = [ 'deps/greetings138.swift' ]
 )
 
-apple_library(name = 'child139',
+apple_library(
+  name = 'child139',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1909,7 +1851,8 @@ apple_library(name = 'child139',
   srcs = [ 'deps/greetings139.swift' ]
 )
 
-apple_library(name = 'child140',
+apple_library(
+  name = 'child140',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1921,7 +1864,8 @@ apple_library(name = 'child140',
   srcs = [ 'deps/greetings140.swift' ]
 )
 
-apple_library(name = 'child141',
+apple_library(
+  name = 'child141',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1933,7 +1877,8 @@ apple_library(name = 'child141',
   srcs = [ 'deps/greetings141.swift' ]
 )
 
-apple_library(name = 'child142',
+apple_library(
+  name = 'child142',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1945,7 +1890,8 @@ apple_library(name = 'child142',
   srcs = [ 'deps/greetings142.swift' ]
 )
 
-apple_library(name = 'child143',
+apple_library(
+  name = 'child143',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1957,7 +1903,8 @@ apple_library(name = 'child143',
   srcs = [ 'deps/greetings143.swift' ]
 )
 
-apple_library(name = 'child144',
+apple_library(
+  name = 'child144',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1969,7 +1916,8 @@ apple_library(name = 'child144',
   srcs = [ 'deps/greetings144.swift' ]
 )
 
-apple_library(name = 'child145',
+apple_library(
+  name = 'child145',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1981,7 +1929,8 @@ apple_library(name = 'child145',
   srcs = [ 'deps/greetings145.swift' ]
 )
 
-apple_library(name = 'child146',
+apple_library(
+  name = 'child146',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -1993,7 +1942,8 @@ apple_library(name = 'child146',
   srcs = [ 'deps/greetings146.swift' ]
 )
 
-apple_library(name = 'child147',
+apple_library(
+  name = 'child147',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2005,7 +1955,8 @@ apple_library(name = 'child147',
   srcs = [ 'deps/greetings147.swift' ]
 )
 
-apple_library(name = 'child148',
+apple_library(
+  name = 'child148',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2017,7 +1968,8 @@ apple_library(name = 'child148',
   srcs = [ 'deps/greetings148.swift' ]
 )
 
-apple_library(name = 'child149',
+apple_library(
+  name = 'child149',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2029,7 +1981,8 @@ apple_library(name = 'child149',
   srcs = [ 'deps/greetings149.swift' ]
 )
 
-apple_library(name = 'child150',
+apple_library(
+  name = 'child150',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2041,7 +1994,8 @@ apple_library(name = 'child150',
   srcs = [ 'deps/greetings150.swift' ]
 )
 
-apple_library(name = 'child151',
+apple_library(
+  name = 'child151',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2053,7 +2007,8 @@ apple_library(name = 'child151',
   srcs = [ 'deps/greetings151.swift' ]
 )
 
-apple_library(name = 'child152',
+apple_library(
+  name = 'child152',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2065,7 +2020,8 @@ apple_library(name = 'child152',
   srcs = [ 'deps/greetings152.swift' ]
 )
 
-apple_library(name = 'child153',
+apple_library(
+  name = 'child153',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2077,7 +2033,8 @@ apple_library(name = 'child153',
   srcs = [ 'deps/greetings153.swift' ]
 )
 
-apple_library(name = 'child154',
+apple_library(
+  name = 'child154',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2089,7 +2046,8 @@ apple_library(name = 'child154',
   srcs = [ 'deps/greetings154.swift' ]
 )
 
-apple_library(name = 'child155',
+apple_library(
+  name = 'child155',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2101,7 +2059,8 @@ apple_library(name = 'child155',
   srcs = [ 'deps/greetings155.swift' ]
 )
 
-apple_library(name = 'child156',
+apple_library(
+  name = 'child156',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2113,7 +2072,8 @@ apple_library(name = 'child156',
   srcs = [ 'deps/greetings156.swift' ]
 )
 
-apple_library(name = 'child157',
+apple_library(
+  name = 'child157',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2125,7 +2085,8 @@ apple_library(name = 'child157',
   srcs = [ 'deps/greetings157.swift' ]
 )
 
-apple_library(name = 'child158',
+apple_library(
+  name = 'child158',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2137,7 +2098,8 @@ apple_library(name = 'child158',
   srcs = [ 'deps/greetings158.swift' ]
 )
 
-apple_library(name = 'child159',
+apple_library(
+  name = 'child159',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2149,7 +2111,8 @@ apple_library(name = 'child159',
   srcs = [ 'deps/greetings159.swift' ]
 )
 
-apple_library(name = 'child160',
+apple_library(
+  name = 'child160',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2161,7 +2124,8 @@ apple_library(name = 'child160',
   srcs = [ 'deps/greetings160.swift' ]
 )
 
-apple_library(name = 'child161',
+apple_library(
+  name = 'child161',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2173,7 +2137,8 @@ apple_library(name = 'child161',
   srcs = [ 'deps/greetings161.swift' ]
 )
 
-apple_library(name = 'child162',
+apple_library(
+  name = 'child162',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2185,7 +2150,8 @@ apple_library(name = 'child162',
   srcs = [ 'deps/greetings162.swift' ]
 )
 
-apple_library(name = 'child163',
+apple_library(
+  name = 'child163',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2197,7 +2163,8 @@ apple_library(name = 'child163',
   srcs = [ 'deps/greetings163.swift' ]
 )
 
-apple_library(name = 'child164',
+apple_library(
+  name = 'child164',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2209,7 +2176,8 @@ apple_library(name = 'child164',
   srcs = [ 'deps/greetings164.swift' ]
 )
 
-apple_library(name = 'child165',
+apple_library(
+  name = 'child165',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2221,7 +2189,8 @@ apple_library(name = 'child165',
   srcs = [ 'deps/greetings165.swift' ]
 )
 
-apple_library(name = 'child166',
+apple_library(
+  name = 'child166',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2233,7 +2202,8 @@ apple_library(name = 'child166',
   srcs = [ 'deps/greetings166.swift' ]
 )
 
-apple_library(name = 'child167',
+apple_library(
+  name = 'child167',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2245,7 +2215,8 @@ apple_library(name = 'child167',
   srcs = [ 'deps/greetings167.swift' ]
 )
 
-apple_library(name = 'child168',
+apple_library(
+  name = 'child168',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2257,7 +2228,8 @@ apple_library(name = 'child168',
   srcs = [ 'deps/greetings168.swift' ]
 )
 
-apple_library(name = 'child169',
+apple_library(
+  name = 'child169',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2269,7 +2241,8 @@ apple_library(name = 'child169',
   srcs = [ 'deps/greetings169.swift' ]
 )
 
-apple_library(name = 'child170',
+apple_library(
+  name = 'child170',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2281,7 +2254,8 @@ apple_library(name = 'child170',
   srcs = [ 'deps/greetings170.swift' ]
 )
 
-apple_library(name = 'child171',
+apple_library(
+  name = 'child171',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2293,7 +2267,8 @@ apple_library(name = 'child171',
   srcs = [ 'deps/greetings171.swift' ]
 )
 
-apple_library(name = 'child172',
+apple_library(
+  name = 'child172',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2305,7 +2280,8 @@ apple_library(name = 'child172',
   srcs = [ 'deps/greetings172.swift' ]
 )
 
-apple_library(name = 'child173',
+apple_library(
+  name = 'child173',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2317,7 +2293,8 @@ apple_library(name = 'child173',
   srcs = [ 'deps/greetings173.swift' ]
 )
 
-apple_library(name = 'child174',
+apple_library(
+  name = 'child174',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2329,7 +2306,8 @@ apple_library(name = 'child174',
   srcs = [ 'deps/greetings174.swift' ]
 )
 
-apple_library(name = 'child175',
+apple_library(
+  name = 'child175',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2341,7 +2319,8 @@ apple_library(name = 'child175',
   srcs = [ 'deps/greetings175.swift' ]
 )
 
-apple_library(name = 'child176',
+apple_library(
+  name = 'child176',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2353,7 +2332,8 @@ apple_library(name = 'child176',
   srcs = [ 'deps/greetings176.swift' ]
 )
 
-apple_library(name = 'child177',
+apple_library(
+  name = 'child177',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2365,7 +2345,8 @@ apple_library(name = 'child177',
   srcs = [ 'deps/greetings177.swift' ]
 )
 
-apple_library(name = 'child178',
+apple_library(
+  name = 'child178',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2377,7 +2358,8 @@ apple_library(name = 'child178',
   srcs = [ 'deps/greetings178.swift' ]
 )
 
-apple_library(name = 'child179',
+apple_library(
+  name = 'child179',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2389,7 +2371,8 @@ apple_library(name = 'child179',
   srcs = [ 'deps/greetings179.swift' ]
 )
 
-apple_library(name = 'child180',
+apple_library(
+  name = 'child180',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2401,7 +2384,8 @@ apple_library(name = 'child180',
   srcs = [ 'deps/greetings180.swift' ]
 )
 
-apple_library(name = 'child181',
+apple_library(
+  name = 'child181',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2413,7 +2397,8 @@ apple_library(name = 'child181',
   srcs = [ 'deps/greetings181.swift' ]
 )
 
-apple_library(name = 'child182',
+apple_library(
+  name = 'child182',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2425,7 +2410,8 @@ apple_library(name = 'child182',
   srcs = [ 'deps/greetings182.swift' ]
 )
 
-apple_library(name = 'child183',
+apple_library(
+  name = 'child183',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2437,7 +2423,8 @@ apple_library(name = 'child183',
   srcs = [ 'deps/greetings183.swift' ]
 )
 
-apple_library(name = 'child184',
+apple_library(
+  name = 'child184',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2449,7 +2436,8 @@ apple_library(name = 'child184',
   srcs = [ 'deps/greetings184.swift' ]
 )
 
-apple_library(name = 'child185',
+apple_library(
+  name = 'child185',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2461,7 +2449,8 @@ apple_library(name = 'child185',
   srcs = [ 'deps/greetings185.swift' ]
 )
 
-apple_library(name = 'child186',
+apple_library(
+  name = 'child186',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2473,7 +2462,8 @@ apple_library(name = 'child186',
   srcs = [ 'deps/greetings186.swift' ]
 )
 
-apple_library(name = 'child187',
+apple_library(
+  name = 'child187',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2485,7 +2475,8 @@ apple_library(name = 'child187',
   srcs = [ 'deps/greetings187.swift' ]
 )
 
-apple_library(name = 'child188',
+apple_library(
+  name = 'child188',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2497,7 +2488,8 @@ apple_library(name = 'child188',
   srcs = [ 'deps/greetings188.swift' ]
 )
 
-apple_library(name = 'child189',
+apple_library(
+  name = 'child189',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2509,7 +2501,8 @@ apple_library(name = 'child189',
   srcs = [ 'deps/greetings189.swift' ]
 )
 
-apple_library(name = 'child190',
+apple_library(
+  name = 'child190',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2521,7 +2514,8 @@ apple_library(name = 'child190',
   srcs = [ 'deps/greetings190.swift' ]
 )
 
-apple_library(name = 'child191',
+apple_library(
+  name = 'child191',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2533,7 +2527,8 @@ apple_library(name = 'child191',
   srcs = [ 'deps/greetings191.swift' ]
 )
 
-apple_library(name = 'child192',
+apple_library(
+  name = 'child192',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2545,7 +2540,8 @@ apple_library(name = 'child192',
   srcs = [ 'deps/greetings192.swift' ]
 )
 
-apple_library(name = 'child193',
+apple_library(
+  name = 'child193',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2557,7 +2553,8 @@ apple_library(name = 'child193',
   srcs = [ 'deps/greetings193.swift' ]
 )
 
-apple_library(name = 'child194',
+apple_library(
+  name = 'child194',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2569,7 +2566,8 @@ apple_library(name = 'child194',
   srcs = [ 'deps/greetings194.swift' ]
 )
 
-apple_library(name = 'child195',
+apple_library(
+  name = 'child195',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2581,7 +2579,8 @@ apple_library(name = 'child195',
   srcs = [ 'deps/greetings195.swift' ]
 )
 
-apple_library(name = 'child196',
+apple_library(
+  name = 'child196',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2593,7 +2592,8 @@ apple_library(name = 'child196',
   srcs = [ 'deps/greetings196.swift' ]
 )
 
-apple_library(name = 'child197',
+apple_library(
+  name = 'child197',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2605,7 +2605,8 @@ apple_library(name = 'child197',
   srcs = [ 'deps/greetings197.swift' ]
 )
 
-apple_library(name = 'child198',
+apple_library(
+  name = 'child198',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2617,7 +2618,8 @@ apple_library(name = 'child198',
   srcs = [ 'deps/greetings198.swift' ]
 )
 
-apple_library(name = 'child199',
+apple_library(
+  name = 'child199',
   info_plist = 'Info.plist',
   frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
   configs = {
@@ -2627,4 +2629,5207 @@ apple_library(name = 'child199',
     }
   },
   srcs = [ 'deps/greetings199.swift' ]
+)
+
+
+apple_library(
+  name = 'child00',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings0.swift' ]
+)
+
+apple_library(
+  name = 'child01',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings1.swift' ]
+)
+
+apple_library(
+  name = 'child02',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings2.swift' ]
+)
+
+apple_library(
+  name = 'child03',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings3.swift' ]
+)
+
+apple_library(
+  name = 'child04',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings4.swift' ]
+)
+
+apple_library(
+  name = 'child05',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings5.swift' ]
+)
+
+apple_library(
+  name = 'child06',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings6.swift' ]
+)
+
+apple_library(
+  name = 'child07',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings7.swift' ]
+)
+
+apple_library(
+  name = 'child08',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings8.swift' ]
+)
+
+apple_library(
+  name = 'child09',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings9.swift' ]
+)
+
+apple_library(
+  name = 'child010',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings10.swift' ]
+)
+
+apple_library(
+  name = 'child011',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings11.swift' ]
+)
+
+apple_library(
+  name = 'child012',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings12.swift' ]
+)
+
+apple_library(
+  name = 'child013',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings13.swift' ]
+)
+
+apple_library(
+  name = 'child014',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings14.swift' ]
+)
+
+apple_library(
+  name = 'child015',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings15.swift' ]
+)
+
+apple_library(
+  name = 'child016',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings16.swift' ]
+)
+
+apple_library(
+  name = 'child017',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings17.swift' ]
+)
+
+apple_library(
+  name = 'child018',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings18.swift' ]
+)
+
+apple_library(
+  name = 'child019',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings19.swift' ]
+)
+
+apple_library(
+  name = 'child020',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings20.swift' ]
+)
+
+apple_library(
+  name = 'child021',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings21.swift' ]
+)
+
+apple_library(
+  name = 'child022',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings22.swift' ]
+)
+
+apple_library(
+  name = 'child023',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings23.swift' ]
+)
+
+apple_library(
+  name = 'child024',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings24.swift' ]
+)
+
+apple_library(
+  name = 'child025',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings25.swift' ]
+)
+
+apple_library(
+  name = 'child026',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings26.swift' ]
+)
+
+apple_library(
+  name = 'child027',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings27.swift' ]
+)
+
+apple_library(
+  name = 'child028',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings28.swift' ]
+)
+
+apple_library(
+  name = 'child029',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings29.swift' ]
+)
+
+apple_library(
+  name = 'child030',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings30.swift' ]
+)
+
+apple_library(
+  name = 'child031',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings31.swift' ]
+)
+
+apple_library(
+  name = 'child032',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings32.swift' ]
+)
+
+apple_library(
+  name = 'child033',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings33.swift' ]
+)
+
+apple_library(
+  name = 'child034',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings34.swift' ]
+)
+
+apple_library(
+  name = 'child035',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings35.swift' ]
+)
+
+apple_library(
+  name = 'child036',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings36.swift' ]
+)
+
+apple_library(
+  name = 'child037',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings37.swift' ]
+)
+
+apple_library(
+  name = 'child038',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings38.swift' ]
+)
+
+apple_library(
+  name = 'child039',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings39.swift' ]
+)
+
+apple_library(
+  name = 'child040',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings40.swift' ]
+)
+
+apple_library(
+  name = 'child041',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings41.swift' ]
+)
+
+apple_library(
+  name = 'child042',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings42.swift' ]
+)
+
+apple_library(
+  name = 'child043',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings43.swift' ]
+)
+
+apple_library(
+  name = 'child044',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings44.swift' ]
+)
+
+apple_library(
+  name = 'child045',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings45.swift' ]
+)
+
+apple_library(
+  name = 'child046',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings46.swift' ]
+)
+
+apple_library(
+  name = 'child047',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings47.swift' ]
+)
+
+apple_library(
+  name = 'child048',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings48.swift' ]
+)
+
+apple_library(
+  name = 'child049',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings49.swift' ]
+)
+
+apple_library(
+  name = 'child050',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings50.swift' ]
+)
+
+apple_library(
+  name = 'child051',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings51.swift' ]
+)
+
+apple_library(
+  name = 'child052',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings52.swift' ]
+)
+
+apple_library(
+  name = 'child053',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings53.swift' ]
+)
+
+apple_library(
+  name = 'child054',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings54.swift' ]
+)
+
+apple_library(
+  name = 'child055',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings55.swift' ]
+)
+
+apple_library(
+  name = 'child056',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings56.swift' ]
+)
+
+apple_library(
+  name = 'child057',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings57.swift' ]
+)
+
+apple_library(
+  name = 'child058',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings58.swift' ]
+)
+
+apple_library(
+  name = 'child059',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings59.swift' ]
+)
+
+apple_library(
+  name = 'child060',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings60.swift' ]
+)
+
+apple_library(
+  name = 'child061',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings61.swift' ]
+)
+
+apple_library(
+  name = 'child062',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings62.swift' ]
+)
+
+apple_library(
+  name = 'child063',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings63.swift' ]
+)
+
+apple_library(
+  name = 'child064',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings64.swift' ]
+)
+
+apple_library(
+  name = 'child065',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings65.swift' ]
+)
+
+apple_library(
+  name = 'child066',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings66.swift' ]
+)
+
+apple_library(
+  name = 'child067',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings67.swift' ]
+)
+
+apple_library(
+  name = 'child068',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings68.swift' ]
+)
+
+apple_library(
+  name = 'child069',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings69.swift' ]
+)
+
+apple_library(
+  name = 'child070',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings70.swift' ]
+)
+
+apple_library(
+  name = 'child071',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings71.swift' ]
+)
+
+apple_library(
+  name = 'child072',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings72.swift' ]
+)
+
+apple_library(
+  name = 'child073',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings73.swift' ]
+)
+
+apple_library(
+  name = 'child074',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings74.swift' ]
+)
+
+apple_library(
+  name = 'child075',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings75.swift' ]
+)
+
+apple_library(
+  name = 'child076',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings76.swift' ]
+)
+
+apple_library(
+  name = 'child077',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings77.swift' ]
+)
+
+apple_library(
+  name = 'child078',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings78.swift' ]
+)
+
+apple_library(
+  name = 'child079',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings79.swift' ]
+)
+
+apple_library(
+  name = 'child080',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings80.swift' ]
+)
+
+apple_library(
+  name = 'child081',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings81.swift' ]
+)
+
+apple_library(
+  name = 'child082',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings82.swift' ]
+)
+
+apple_library(
+  name = 'child083',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings83.swift' ]
+)
+
+apple_library(
+  name = 'child084',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings84.swift' ]
+)
+
+apple_library(
+  name = 'child085',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings85.swift' ]
+)
+
+apple_library(
+  name = 'child086',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings86.swift' ]
+)
+
+apple_library(
+  name = 'child087',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings87.swift' ]
+)
+
+apple_library(
+  name = 'child088',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings88.swift' ]
+)
+
+apple_library(
+  name = 'child089',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings89.swift' ]
+)
+
+apple_library(
+  name = 'child090',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings90.swift' ]
+)
+
+apple_library(
+  name = 'child091',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings91.swift' ]
+)
+
+apple_library(
+  name = 'child092',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings92.swift' ]
+)
+
+apple_library(
+  name = 'child093',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings93.swift' ]
+)
+
+apple_library(
+  name = 'child094',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings94.swift' ]
+)
+
+apple_library(
+  name = 'child095',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings95.swift' ]
+)
+
+apple_library(
+  name = 'child096',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings96.swift' ]
+)
+
+apple_library(
+  name = 'child097',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings97.swift' ]
+)
+
+apple_library(
+  name = 'child098',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings98.swift' ]
+)
+
+apple_library(
+  name = 'child099',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings99.swift' ]
+)
+
+apple_library(
+  name = 'child0100',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings100.swift' ]
+)
+
+apple_library(
+  name = 'child0101',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings101.swift' ]
+)
+
+apple_library(
+  name = 'child0102',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings102.swift' ]
+)
+
+apple_library(
+  name = 'child0103',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings103.swift' ]
+)
+
+apple_library(
+  name = 'child0104',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings104.swift' ]
+)
+
+apple_library(
+  name = 'child0105',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings105.swift' ]
+)
+
+apple_library(
+  name = 'child0106',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings106.swift' ]
+)
+
+apple_library(
+  name = 'child0107',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings107.swift' ]
+)
+
+apple_library(
+  name = 'child0108',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings108.swift' ]
+)
+
+apple_library(
+  name = 'child0109',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings109.swift' ]
+)
+
+apple_library(
+  name = 'child0110',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings110.swift' ]
+)
+
+apple_library(
+  name = 'child0111',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings111.swift' ]
+)
+
+apple_library(
+  name = 'child0112',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings112.swift' ]
+)
+
+apple_library(
+  name = 'child0113',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings113.swift' ]
+)
+
+apple_library(
+  name = 'child0114',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings114.swift' ]
+)
+
+apple_library(
+  name = 'child0115',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings115.swift' ]
+)
+
+apple_library(
+  name = 'child0116',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings116.swift' ]
+)
+
+apple_library(
+  name = 'child0117',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings117.swift' ]
+)
+
+apple_library(
+  name = 'child0118',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings118.swift' ]
+)
+
+apple_library(
+  name = 'child0119',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings119.swift' ]
+)
+
+apple_library(
+  name = 'child0120',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings120.swift' ]
+)
+
+apple_library(
+  name = 'child0121',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings121.swift' ]
+)
+
+apple_library(
+  name = 'child0122',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings122.swift' ]
+)
+
+apple_library(
+  name = 'child0123',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings123.swift' ]
+)
+
+apple_library(
+  name = 'child0124',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings124.swift' ]
+)
+
+apple_library(
+  name = 'child0125',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings125.swift' ]
+)
+
+apple_library(
+  name = 'child0126',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings126.swift' ]
+)
+
+apple_library(
+  name = 'child0127',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings127.swift' ]
+)
+
+apple_library(
+  name = 'child0128',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings128.swift' ]
+)
+
+apple_library(
+  name = 'child0129',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings129.swift' ]
+)
+
+apple_library(
+  name = 'child0130',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings130.swift' ]
+)
+
+apple_library(
+  name = 'child0131',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings131.swift' ]
+)
+
+apple_library(
+  name = 'child0132',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings132.swift' ]
+)
+
+apple_library(
+  name = 'child0133',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings133.swift' ]
+)
+
+apple_library(
+  name = 'child0134',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings134.swift' ]
+)
+
+apple_library(
+  name = 'child0135',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings135.swift' ]
+)
+
+apple_library(
+  name = 'child0136',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings136.swift' ]
+)
+
+apple_library(
+  name = 'child0137',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings137.swift' ]
+)
+
+apple_library(
+  name = 'child0138',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings138.swift' ]
+)
+
+apple_library(
+  name = 'child0139',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings139.swift' ]
+)
+
+apple_library(
+  name = 'child0140',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings140.swift' ]
+)
+
+apple_library(
+  name = 'child0141',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings141.swift' ]
+)
+
+apple_library(
+  name = 'child0142',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings142.swift' ]
+)
+
+apple_library(
+  name = 'child0143',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings143.swift' ]
+)
+
+apple_library(
+  name = 'child0144',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings144.swift' ]
+)
+
+apple_library(
+  name = 'child0145',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings145.swift' ]
+)
+
+apple_library(
+  name = 'child0146',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings146.swift' ]
+)
+
+apple_library(
+  name = 'child0147',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings147.swift' ]
+)
+
+apple_library(
+  name = 'child0148',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings148.swift' ]
+)
+
+apple_library(
+  name = 'child0149',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings149.swift' ]
+)
+
+apple_library(
+  name = 'child0150',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings150.swift' ]
+)
+
+apple_library(
+  name = 'child0151',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings151.swift' ]
+)
+
+apple_library(
+  name = 'child0152',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings152.swift' ]
+)
+
+apple_library(
+  name = 'child0153',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings153.swift' ]
+)
+
+apple_library(
+  name = 'child0154',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings154.swift' ]
+)
+
+apple_library(
+  name = 'child0155',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings155.swift' ]
+)
+
+apple_library(
+  name = 'child0156',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings156.swift' ]
+)
+
+apple_library(
+  name = 'child0157',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings157.swift' ]
+)
+
+apple_library(
+  name = 'child0158',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings158.swift' ]
+)
+
+apple_library(
+  name = 'child0159',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings159.swift' ]
+)
+
+apple_library(
+  name = 'child0160',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings160.swift' ]
+)
+
+apple_library(
+  name = 'child0161',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings161.swift' ]
+)
+
+apple_library(
+  name = 'child0162',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings162.swift' ]
+)
+
+apple_library(
+  name = 'child0163',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings163.swift' ]
+)
+
+apple_library(
+  name = 'child0164',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings164.swift' ]
+)
+
+apple_library(
+  name = 'child0165',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings165.swift' ]
+)
+
+apple_library(
+  name = 'child0166',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings166.swift' ]
+)
+
+apple_library(
+  name = 'child0167',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings167.swift' ]
+)
+
+apple_library(
+  name = 'child0168',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings168.swift' ]
+)
+
+apple_library(
+  name = 'child0169',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings169.swift' ]
+)
+
+apple_library(
+  name = 'child0170',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings170.swift' ]
+)
+
+apple_library(
+  name = 'child0171',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings171.swift' ]
+)
+
+apple_library(
+  name = 'child0172',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings172.swift' ]
+)
+
+apple_library(
+  name = 'child0173',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings173.swift' ]
+)
+
+apple_library(
+  name = 'child0174',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings174.swift' ]
+)
+
+apple_library(
+  name = 'child0175',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings175.swift' ]
+)
+
+apple_library(
+  name = 'child0176',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings176.swift' ]
+)
+
+apple_library(
+  name = 'child0177',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings177.swift' ]
+)
+
+apple_library(
+  name = 'child0178',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings178.swift' ]
+)
+
+apple_library(
+  name = 'child0179',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings179.swift' ]
+)
+
+apple_library(
+  name = 'child0180',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings180.swift' ]
+)
+
+apple_library(
+  name = 'child0181',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings181.swift' ]
+)
+
+apple_library(
+  name = 'child0182',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings182.swift' ]
+)
+
+apple_library(
+  name = 'child0183',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings183.swift' ]
+)
+
+apple_library(
+  name = 'child0184',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings184.swift' ]
+)
+
+apple_library(
+  name = 'child0185',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings185.swift' ]
+)
+
+apple_library(
+  name = 'child0186',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings186.swift' ]
+)
+
+apple_library(
+  name = 'child0187',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings187.swift' ]
+)
+
+apple_library(
+  name = 'child0188',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings188.swift' ]
+)
+
+apple_library(
+  name = 'child0189',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings189.swift' ]
+)
+
+apple_library(
+  name = 'child0190',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings190.swift' ]
+)
+
+apple_library(
+  name = 'child0191',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings191.swift' ]
+)
+
+apple_library(
+  name = 'child0192',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings192.swift' ]
+)
+
+apple_library(
+  name = 'child0193',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings193.swift' ]
+)
+
+apple_library(
+  name = 'child0194',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings194.swift' ]
+)
+
+apple_library(
+  name = 'child0195',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings195.swift' ]
+)
+
+apple_library(
+  name = 'child0196',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings196.swift' ]
+)
+
+apple_library(
+  name = 'child0197',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings197.swift' ]
+)
+
+apple_library(
+  name = 'child0198',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings198.swift' ]
+)
+
+apple_library(
+  name = 'child0199',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps0/greetings199.swift' ]
+)
+
+
+
+apple_library(
+  name = 'child0000',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings0.swift' ]
+)
+
+apple_library(
+  name = 'child0001',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings1.swift' ]
+)
+
+apple_library(
+  name = 'child0002',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings2.swift' ]
+)
+
+apple_library(
+  name = 'child0003',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings3.swift' ]
+)
+
+apple_library(
+  name = 'child0004',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings4.swift' ]
+)
+
+apple_library(
+  name = 'child0005',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings5.swift' ]
+)
+
+apple_library(
+  name = 'child0006',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings6.swift' ]
+)
+
+apple_library(
+  name = 'child0007',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings7.swift' ]
+)
+
+apple_library(
+  name = 'child0008',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings8.swift' ]
+)
+
+apple_library(
+  name = 'child0009',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings9.swift' ]
+)
+
+apple_library(
+  name = 'child00010',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings10.swift' ]
+)
+
+apple_library(
+  name = 'child00011',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings11.swift' ]
+)
+
+apple_library(
+  name = 'child00012',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings12.swift' ]
+)
+
+apple_library(
+  name = 'child00013',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings13.swift' ]
+)
+
+apple_library(
+  name = 'child00014',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings14.swift' ]
+)
+
+apple_library(
+  name = 'child00015',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings15.swift' ]
+)
+
+apple_library(
+  name = 'child00016',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings16.swift' ]
+)
+
+apple_library(
+  name = 'child00017',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings17.swift' ]
+)
+
+apple_library(
+  name = 'child00018',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings18.swift' ]
+)
+
+apple_library(
+  name = 'child00019',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings19.swift' ]
+)
+
+apple_library(
+  name = 'child00020',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings20.swift' ]
+)
+
+apple_library(
+  name = 'child00021',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings21.swift' ]
+)
+
+apple_library(
+  name = 'child00022',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings22.swift' ]
+)
+
+apple_library(
+  name = 'child00023',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings23.swift' ]
+)
+
+apple_library(
+  name = 'child00024',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings24.swift' ]
+)
+
+apple_library(
+  name = 'child00025',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings25.swift' ]
+)
+
+apple_library(
+  name = 'child00026',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings26.swift' ]
+)
+
+apple_library(
+  name = 'child00027',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings27.swift' ]
+)
+
+apple_library(
+  name = 'child00028',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings28.swift' ]
+)
+
+apple_library(
+  name = 'child00029',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings29.swift' ]
+)
+
+apple_library(
+  name = 'child00030',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings30.swift' ]
+)
+
+apple_library(
+  name = 'child00031',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings31.swift' ]
+)
+
+apple_library(
+  name = 'child00032',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings32.swift' ]
+)
+
+apple_library(
+  name = 'child00033',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings33.swift' ]
+)
+
+apple_library(
+  name = 'child00034',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings34.swift' ]
+)
+
+apple_library(
+  name = 'child00035',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings35.swift' ]
+)
+
+apple_library(
+  name = 'child00036',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings36.swift' ]
+)
+
+apple_library(
+  name = 'child00037',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings37.swift' ]
+)
+
+apple_library(
+  name = 'child00038',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings38.swift' ]
+)
+
+apple_library(
+  name = 'child00039',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings39.swift' ]
+)
+
+apple_library(
+  name = 'child00040',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings40.swift' ]
+)
+
+apple_library(
+  name = 'child00041',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings41.swift' ]
+)
+
+apple_library(
+  name = 'child00042',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings42.swift' ]
+)
+
+apple_library(
+  name = 'child00043',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings43.swift' ]
+)
+
+apple_library(
+  name = 'child00044',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings44.swift' ]
+)
+
+apple_library(
+  name = 'child00045',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings45.swift' ]
+)
+
+apple_library(
+  name = 'child00046',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings46.swift' ]
+)
+
+apple_library(
+  name = 'child00047',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings47.swift' ]
+)
+
+apple_library(
+  name = 'child00048',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings48.swift' ]
+)
+
+apple_library(
+  name = 'child00049',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings49.swift' ]
+)
+
+apple_library(
+  name = 'child00050',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings50.swift' ]
+)
+
+apple_library(
+  name = 'child00051',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings51.swift' ]
+)
+
+apple_library(
+  name = 'child00052',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings52.swift' ]
+)
+
+apple_library(
+  name = 'child00053',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings53.swift' ]
+)
+
+apple_library(
+  name = 'child00054',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings54.swift' ]
+)
+
+apple_library(
+  name = 'child00055',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings55.swift' ]
+)
+
+apple_library(
+  name = 'child00056',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings56.swift' ]
+)
+
+apple_library(
+  name = 'child00057',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings57.swift' ]
+)
+
+apple_library(
+  name = 'child00058',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings58.swift' ]
+)
+
+apple_library(
+  name = 'child00059',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings59.swift' ]
+)
+
+apple_library(
+  name = 'child00060',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings60.swift' ]
+)
+
+apple_library(
+  name = 'child00061',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings61.swift' ]
+)
+
+apple_library(
+  name = 'child00062',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings62.swift' ]
+)
+
+apple_library(
+  name = 'child00063',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings63.swift' ]
+)
+
+apple_library(
+  name = 'child00064',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings64.swift' ]
+)
+
+apple_library(
+  name = 'child00065',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings65.swift' ]
+)
+
+apple_library(
+  name = 'child00066',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings66.swift' ]
+)
+
+apple_library(
+  name = 'child00067',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings67.swift' ]
+)
+
+apple_library(
+  name = 'child00068',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings68.swift' ]
+)
+
+apple_library(
+  name = 'child00069',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings69.swift' ]
+)
+
+apple_library(
+  name = 'child00070',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings70.swift' ]
+)
+
+apple_library(
+  name = 'child00071',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings71.swift' ]
+)
+
+apple_library(
+  name = 'child00072',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings72.swift' ]
+)
+
+apple_library(
+  name = 'child00073',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings73.swift' ]
+)
+
+apple_library(
+  name = 'child00074',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings74.swift' ]
+)
+
+apple_library(
+  name = 'child00075',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings75.swift' ]
+)
+
+apple_library(
+  name = 'child00076',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings76.swift' ]
+)
+
+apple_library(
+  name = 'child00077',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings77.swift' ]
+)
+
+apple_library(
+  name = 'child00078',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings78.swift' ]
+)
+
+apple_library(
+  name = 'child00079',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings79.swift' ]
+)
+
+apple_library(
+  name = 'child00080',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings80.swift' ]
+)
+
+apple_library(
+  name = 'child00081',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings81.swift' ]
+)
+
+apple_library(
+  name = 'child00082',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings82.swift' ]
+)
+
+apple_library(
+  name = 'child00083',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings83.swift' ]
+)
+
+apple_library(
+  name = 'child00084',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings84.swift' ]
+)
+
+apple_library(
+  name = 'child00085',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings85.swift' ]
+)
+
+apple_library(
+  name = 'child00086',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings86.swift' ]
+)
+
+apple_library(
+  name = 'child00087',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings87.swift' ]
+)
+
+apple_library(
+  name = 'child00088',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings88.swift' ]
+)
+
+apple_library(
+  name = 'child00089',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings89.swift' ]
+)
+
+apple_library(
+  name = 'child00090',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings90.swift' ]
+)
+
+apple_library(
+  name = 'child00091',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings91.swift' ]
+)
+
+apple_library(
+  name = 'child00092',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings92.swift' ]
+)
+
+apple_library(
+  name = 'child00093',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings93.swift' ]
+)
+
+apple_library(
+  name = 'child00094',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings94.swift' ]
+)
+
+apple_library(
+  name = 'child00095',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings95.swift' ]
+)
+
+apple_library(
+  name = 'child00096',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings96.swift' ]
+)
+
+apple_library(
+  name = 'child00097',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings97.swift' ]
+)
+
+apple_library(
+  name = 'child00098',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings98.swift' ]
+)
+
+apple_library(
+  name = 'child00099',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings99.swift' ]
+)
+
+apple_library(
+  name = 'child000100',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings100.swift' ]
+)
+
+apple_library(
+  name = 'child000101',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings101.swift' ]
+)
+
+apple_library(
+  name = 'child000102',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings102.swift' ]
+)
+
+apple_library(
+  name = 'child000103',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings103.swift' ]
+)
+
+apple_library(
+  name = 'child000104',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings104.swift' ]
+)
+
+apple_library(
+  name = 'child000105',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings105.swift' ]
+)
+
+apple_library(
+  name = 'child000106',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings106.swift' ]
+)
+
+apple_library(
+  name = 'child000107',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings107.swift' ]
+)
+
+apple_library(
+  name = 'child000108',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings108.swift' ]
+)
+
+apple_library(
+  name = 'child000109',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings109.swift' ]
+)
+
+apple_library(
+  name = 'child000110',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings110.swift' ]
+)
+
+apple_library(
+  name = 'child000111',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings111.swift' ]
+)
+
+apple_library(
+  name = 'child000112',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings112.swift' ]
+)
+
+apple_library(
+  name = 'child000113',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings113.swift' ]
+)
+
+apple_library(
+  name = 'child000114',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings114.swift' ]
+)
+
+apple_library(
+  name = 'child000115',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings115.swift' ]
+)
+
+apple_library(
+  name = 'child000116',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings116.swift' ]
+)
+
+apple_library(
+  name = 'child000117',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings117.swift' ]
+)
+
+apple_library(
+  name = 'child000118',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings118.swift' ]
+)
+
+apple_library(
+  name = 'child000119',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings119.swift' ]
+)
+
+apple_library(
+  name = 'child000120',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings120.swift' ]
+)
+
+apple_library(
+  name = 'child000121',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings121.swift' ]
+)
+
+apple_library(
+  name = 'child000122',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings122.swift' ]
+)
+
+apple_library(
+  name = 'child000123',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings123.swift' ]
+)
+
+apple_library(
+  name = 'child000124',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings124.swift' ]
+)
+
+apple_library(
+  name = 'child000125',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings125.swift' ]
+)
+
+apple_library(
+  name = 'child000126',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings126.swift' ]
+)
+
+apple_library(
+  name = 'child000127',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings127.swift' ]
+)
+
+apple_library(
+  name = 'child000128',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings128.swift' ]
+)
+
+apple_library(
+  name = 'child000129',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings129.swift' ]
+)
+
+apple_library(
+  name = 'child000130',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings130.swift' ]
+)
+
+apple_library(
+  name = 'child000131',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings131.swift' ]
+)
+
+apple_library(
+  name = 'child000132',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings132.swift' ]
+)
+
+apple_library(
+  name = 'child000133',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings133.swift' ]
+)
+
+apple_library(
+  name = 'child000134',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings134.swift' ]
+)
+
+apple_library(
+  name = 'child000135',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings135.swift' ]
+)
+
+apple_library(
+  name = 'child000136',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings136.swift' ]
+)
+
+apple_library(
+  name = 'child000137',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings137.swift' ]
+)
+
+apple_library(
+  name = 'child000138',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings138.swift' ]
+)
+
+apple_library(
+  name = 'child000139',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings139.swift' ]
+)
+
+apple_library(
+  name = 'child000140',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings140.swift' ]
+)
+
+apple_library(
+  name = 'child000141',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings141.swift' ]
+)
+
+apple_library(
+  name = 'child000142',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings142.swift' ]
+)
+
+apple_library(
+  name = 'child000143',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings143.swift' ]
+)
+
+apple_library(
+  name = 'child000144',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings144.swift' ]
+)
+
+apple_library(
+  name = 'child000145',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings145.swift' ]
+)
+
+apple_library(
+  name = 'child000146',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings146.swift' ]
+)
+
+apple_library(
+  name = 'child000147',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings147.swift' ]
+)
+
+apple_library(
+  name = 'child000148',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings148.swift' ]
+)
+
+apple_library(
+  name = 'child000149',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings149.swift' ]
+)
+
+apple_library(
+  name = 'child000150',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings150.swift' ]
+)
+
+apple_library(
+  name = 'child000151',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings151.swift' ]
+)
+
+apple_library(
+  name = 'child000152',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings152.swift' ]
+)
+
+apple_library(
+  name = 'child000153',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings153.swift' ]
+)
+
+apple_library(
+  name = 'child000154',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings154.swift' ]
+)
+
+apple_library(
+  name = 'child000155',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings155.swift' ]
+)
+
+apple_library(
+  name = 'child000156',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings156.swift' ]
+)
+
+apple_library(
+  name = 'child000157',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings157.swift' ]
+)
+
+apple_library(
+  name = 'child000158',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings158.swift' ]
+)
+
+apple_library(
+  name = 'child000159',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings159.swift' ]
+)
+
+apple_library(
+  name = 'child000160',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings160.swift' ]
+)
+
+apple_library(
+  name = 'child000161',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings161.swift' ]
+)
+
+apple_library(
+  name = 'child000162',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings162.swift' ]
+)
+
+apple_library(
+  name = 'child000163',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings163.swift' ]
+)
+
+apple_library(
+  name = 'child000164',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings164.swift' ]
+)
+
+apple_library(
+  name = 'child000165',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings165.swift' ]
+)
+
+apple_library(
+  name = 'child000166',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings166.swift' ]
+)
+
+apple_library(
+  name = 'child000167',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings167.swift' ]
+)
+
+apple_library(
+  name = 'child000168',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings168.swift' ]
+)
+
+apple_library(
+  name = 'child000169',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings169.swift' ]
+)
+
+apple_library(
+  name = 'child000170',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings170.swift' ]
+)
+
+apple_library(
+  name = 'child000171',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings171.swift' ]
+)
+
+apple_library(
+  name = 'child000172',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings172.swift' ]
+)
+
+apple_library(
+  name = 'child000173',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings173.swift' ]
+)
+
+apple_library(
+  name = 'child000174',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings174.swift' ]
+)
+
+apple_library(
+  name = 'child000175',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings175.swift' ]
+)
+
+apple_library(
+  name = 'child000176',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings176.swift' ]
+)
+
+apple_library(
+  name = 'child000177',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings177.swift' ]
+)
+
+apple_library(
+  name = 'child000178',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings178.swift' ]
+)
+
+apple_library(
+  name = 'child000179',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings179.swift' ]
+)
+
+apple_library(
+  name = 'child000180',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings180.swift' ]
+)
+
+apple_library(
+  name = 'child000181',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings181.swift' ]
+)
+
+apple_library(
+  name = 'child000182',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings182.swift' ]
+)
+
+apple_library(
+  name = 'child000183',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings183.swift' ]
+)
+
+apple_library(
+  name = 'child000184',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings184.swift' ]
+)
+
+apple_library(
+  name = 'child000185',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings185.swift' ]
+)
+
+apple_library(
+  name = 'child000186',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings186.swift' ]
+)
+
+apple_library(
+  name = 'child000187',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings187.swift' ]
+)
+
+apple_library(
+  name = 'child000188',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings188.swift' ]
+)
+
+apple_library(
+  name = 'child000189',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings189.swift' ]
+)
+
+apple_library(
+  name = 'child000190',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings190.swift' ]
+)
+
+apple_library(
+  name = 'child000191',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings191.swift' ]
+)
+
+apple_library(
+  name = 'child000192',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings192.swift' ]
+)
+
+apple_library(
+  name = 'child000193',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings193.swift' ]
+)
+
+apple_library(
+  name = 'child000194',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings194.swift' ]
+)
+
+apple_library(
+  name = 'child000195',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings195.swift' ]
+)
+
+apple_library(
+  name = 'child000196',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings196.swift' ]
+)
+
+apple_library(
+  name = 'child000197',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings197.swift' ]
+)
+
+apple_library(
+  name = 'child000198',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings198.swift' ]
+)
+
+apple_library(
+  name = 'child000199',
+  info_plist = 'Info.plist',
+  frameworks = ['$SDKROOT/System/Library/Frameworks/Foundation.framework'],
+  configs = {
+    'Debug': {
+    'SWIFT_VERSION':'3.0',
+    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES': 'YES'
+    }
+  },
+  srcs = [ 'deps000/greetings199.swift' ]
 )
